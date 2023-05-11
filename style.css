@@ -87,6 +87,10 @@ a{
     padding-left: 10px;
 }
 
+img{
+    border-radius: 16px;
+}
+
 /* media queres */
 @media(max-width:780px){
     .grid-2{
@@ -101,4 +105,14 @@ a{
         padding-left: 1.5rem;
         padding-top: 2rem;
     }
+}
+
+.btn-1 {
+border: 1px solid #7A7C80;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 10px;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
