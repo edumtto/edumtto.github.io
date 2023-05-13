@@ -1,7 +1,7 @@
 /* global */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-.grid-2{
+.grid-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
@@ -48,6 +48,11 @@ a{
     font-size: 1.5rem;
     padding: 10px;
 }
+
+.section-1 img {
+    border-radius: 16px;
+}
+
 /* section 2 */
 .section-2{
     padding-top: 10vh;
@@ -65,34 +70,11 @@ a{
     margin:0;
 }
 
-.section-2 a{
-    display: block;
-    padding: 5px;
-    font-size: 1.2rem;
-    padding-left: 0;
-    width: 100px;
-}
 /* animations / utilities */
-.section-2 a:hover{
-    font-size: 1.3rem;
+a:hover{
     color: #fff;
     cursor: pointer;
     transition: 0.2s;
-}
-
-.section-1 a:hover{
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.white:hover{
-    position: relative;
-    padding-left: 10px;
-}
-
-img{
-    border-radius: 16px;
 }
 
 /* media queres */
@@ -111,25 +93,24 @@ img{
     }
 }
 
-.btn-1 {
-    font-size: small;
+.btn-bordered {
     border: 1px solid #7A7C80;
     border-radius: 8px;
     cursor: pointer;
     display: inline-block;
-    padding: 8px 10px;
+    padding: 8px 12px;
     -webkit-user-select: none;
     touch-action: manipulation;
 }
 
-a, .btn-1{
-    font-size: small;
+.tag-1{
+    font-size: 16px;
+    background-color: #0e2716;
+    border-radius: 8px;
+    color: #129c42;
+    text-align: center;
+    display: inline-block;
+    padding: 4px;
+    padding-inline: 10px;
+    margin: 10px;
 }
-
-/* .vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  } */
