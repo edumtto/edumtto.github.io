@@ -51,8 +51,9 @@ header {
 }
 
 header img {
-    max-width: 300px;
+    max-width: 260px;
     border-radius: 50%;
+    border: 2px solid #625083;
 }
 
 header h1 {
@@ -63,6 +64,9 @@ header h1 {
 header h1 b {
     color: #c19dff;
     font-weight: bold;
+    background: linear-gradient(90deg, rgba(193,157,255,1) 0%, rgba(193,177,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 header a {
