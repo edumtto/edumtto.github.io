@@ -21,6 +21,13 @@ a {
     color: #7A7C80;
 }
 
+hr {
+    border: 0;
+    height: 1px;
+    /* background-color: #c19dff; */
+    background-image: linear-gradient(to right, #c19dff86,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
 h1,
 h2 {
     color: #fff;
@@ -125,14 +132,16 @@ button a {
     margin-bottom: 16px;
 }
 
-.skill-block {
+.bubble-container {
     display: flex;
+    flex-direction: row;
     column-gap: 8px;
     flex-wrap: wrap;
 }
 
-.skill-block div {
+.bubble-container div {
     border: 1px solid #7A7C80;
+    background-color:#2c2d2e;
     border-radius: 24px;
     padding: 8px;
     margin-bottom: 8px;
