@@ -81,6 +81,12 @@ section h2 {
     font-weight: lighter;
 }
 
+section h3 {
+    /* font-size: 2.4rem; */
+    font-weight: lighter;
+    padding-left: 16px;
+}
+
 /* animations / utilities */
 a:hover {
     color: #fff;
@@ -137,6 +143,7 @@ button a {
     flex-direction: row;
     column-gap: 8px;
     flex-wrap: wrap;
+    padding-left: 16px;
 }
 
 .bubble-container div {
@@ -145,10 +152,6 @@ button a {
     border-radius: 24px;
     padding: 8px;
     margin-bottom: 8px;
-}
-
-.skill-block-title {
-    font-size: 1.2rem;
 }
 
 /* media queres */
