@@ -1,11 +1,10 @@
 /* global */
 
-body {
+body{
     margin: 0;
     padding: 0;
     /* font-family: 'Roboto', sans-serif; */
-    font-family: 'Helvetica';
-    /*Geneva','Optima', */
+    font-family: 'Helvetica'; /*Geneva','Optima', */
     background-color: #101214;
     color: #7A7C80;
     margin: 16px;
@@ -15,27 +14,26 @@ body {
     transform: translateY(-50%); */
 }
 
-a {
+a{
     font-size: 1.5rem;
     padding: 4px;
     color: #7A7C80;
 }
 
-h1,
-h2 {
+h1, h2 {
     color: #fff;
     margin-bottom: 16px;
 }
 
-.default-container {
+.section-container{
     margin: 0 auto;
     padding-top: 32px;
     /* border: 2px solid rgb(0, 255, 187); */
     width: 80%;
 }
 
-/* Header */
-header {
+/* section 1 */
+#section-1{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -43,60 +41,54 @@ header {
     column-gap: 32px;
 }
 
-header img {
+#section-1 img{
     max-width: 300px;
     border-radius: 50%;
 }
 
-header h1 {
+#section-1 h1{
     font-size: 2.4rem;
     font-weight: lighter;
 }
 
-header h1 b {
+#section-1 h1 b{
     color: #c19dff;
     font-weight: bold;
 }
 
-header a {
+#section-1 a{
     vertical-align: middle;
 }
 
-header p {
+#section-1 p{
     font-size: 1.2rem;
     padding-bottom: 10px;
-    margin: 0;
+    margin:0;
 }
 
-/* Sections */
-section h2 {
+/* section 2 */
+#section-2{
+    /* padding-top: 10vh; */
+    /* border: 2px solid yellow; */
+}
+
+#section-2 h2{
     font-size: 2.4rem;
     font-weight: lighter;
 }
 
+
 /* animations / utilities */
-a:hover {
+a:hover{
     color: #fff;
     cursor: pointer;
     transition: 0.2s;
 }
 
-button:hover {
-    background: white;
-}
-
-button a:hover {
-    color: black;
-}
-
-button {
-    /* background: none; */
-    background: #7A7C80;
-	border: 1px solid #7A7C80;
+.btn-bordered {
+    border: 1px solid #7A7C80;
     border-radius: 8px;
-	/* font: inherit; */
-	cursor: pointer;
-	outline: inherit;
+    cursor: pointer;
     display: inline-block;
     padding: 4px 4px;
     -webkit-user-select: none;
@@ -104,15 +96,13 @@ button {
     margin-top: 16px;
 }
 
-button a {
+.btn-bordered a{
     /* color: #7A7C80; */
     text-decoration: none;
     font-size: 16px;
-    font-weight: normal;
-    color: black;
 }
 
-.tag-1 {
+.tag-1{
     font-size: 16px;
     background-color: #0e2716;
     border-radius: 8px;
@@ -125,37 +115,35 @@ button a {
     margin-bottom: 16px;
 }
 
-.skill-block {
+.skill-block{
     display: flex;
     column-gap: 8px;
     flex-wrap: wrap;
 }
 
-.skill-block div {
+.skill-block div{
     border: 1px solid #7A7C80;
     border-radius: 24px;
     padding: 8px;
     margin-bottom: 8px;
 }
 
-.skill-block-title {
+.skill-block-title{
     font-size: 1.2rem;
 }
 
 /* media queres */
-@media(max-width:780px) {
-    header {
+@media(max-width:780px){
+    .section-container{
+        width: 100%;
+        padding: 0;
+    }
+    #section-1{
         padding-top: 5rem;
         flex-direction: column;
     }
-
-    header img {
+    #section-1 img{
         max-width: 180px;
         margin: 0 auto;
-    }
-
-    .default-container {
-        width: 100%;
-        padding: 0;
     }
 }
