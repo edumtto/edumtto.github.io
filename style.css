@@ -88,9 +88,11 @@ header p {
 }
 
 #avatar {
-    max-width: 20%;
-    height: 20%;
+    max-width: 16%;
+    height: 16%;
     margin-top: auto;
+    padding-top: 84px;
+    padding-right: 4%;
 }
 
 #avatar-text {
@@ -210,14 +212,13 @@ button a {
 
 /* media queres */
 @media(max-width:780px) {
-
     #avatar {
-        max-width: 30%;
+        max-width: 24%;
+        margin-top: auto;
     }
 
     #avatar-text {
         max-width: 60%;
-        padding-top: 16px;
     }
 
     .default-container {
@@ -225,17 +226,22 @@ button a {
     }
 }
 
-/* @media only screen and (max-width: 600px) {
-    header {
-        padding-top: 5rem;
-        flex-direction: column;
-    }
-
+@media(max-width: 500px) {
     header .flex-container {
         flex-direction: column;
+        flex-flow: column-reverse;
     }
 
-    section {
-        margin: 16px;
+    #avatar {
+        max-width: 24%;
+        margin-top: 0;
+        padding-top: 0px;
+        padding-bottom: -32px;
+        display: inline;
     }
-} */
+
+    #avatar-text {
+        max-width: 96%;
+        padding-top: 16px;
+    }
+}
