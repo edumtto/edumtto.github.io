@@ -87,6 +87,10 @@ header p {
     margin: 0;
 }
 
+header .flex-container-compact {
+    display: none;
+}
+
 #avatar {
     max-width: 16%;
     height: 16%;
@@ -227,21 +231,34 @@ button a {
 }
 
 @media(max-width: 500px) {
-    header .flex-container {
-        flex-direction: column;
-        flex-flow: column-reverse;
-    }
-
     #avatar {
-        max-width: 24%;
-        margin-top: 0;
-        padding-top: 0px;
-        padding-bottom: -32px;
-        display: inline;
+        display: none;
     }
 
     #avatar-text {
         max-width: 96%;
         padding-top: 16px;
+    }
+
+    header .flex-container-compact {
+        display: flex;
+        flex-direction: row;
+        column-gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    #avatar-compact {
+        max-width: 30%;
+        margin-top: auto;
+        padding-right: 4%;
+    }
+
+    #avatar-buttons-compact {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    #avatar-buttons {
+        display: none;
     }
 }
