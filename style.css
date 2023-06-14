@@ -16,9 +16,12 @@ body {
 }
 
 a {
+    color: #7A7C80;
+}
+
+header a {
     font-size: 1.5rem;
     padding: 4px;
-    color: #7A7C80;
 }
 
 hr {
@@ -88,7 +91,12 @@ section h2 {
 section h3 {
     /* font-size: 2.4rem; */
     font-weight: lighter;
-    padding-left: 16px;
+    padding-left: 8px;
+    color: #fff;
+}
+
+section p{
+    padding-left: 8px;
 }
 
 /* animations / utilities */
@@ -129,6 +137,12 @@ button a {
     color: black;
 }
 
+.icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+}
+
 .tag-1 {
     font-size: 16px;
     background-color: #0e2716;
@@ -142,21 +156,41 @@ button a {
     margin-bottom: 16px;
 }
 
-.bubble-container {
+.flex-container {
     display: flex;
     flex-direction: row;
     column-gap: 8px;
     flex-wrap: wrap;
-    padding-left: 16px;
+    padding-left: 8px;
 }
 
-.bubble-container div {
+#section-skills .flex-container div {
     border: 1px solid #7A7C80;
     background-color:#2c2d2e;
     border-radius: 24px;
     padding: 8px;
     margin-bottom: 8px;
 }
+
+#section-projects .flex-container {
+    padding-top: 32px;
+}
+
+/* #section-projects .flex-container img {
+    height: 300px;
+} */
+
+.screenshots {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.screenshots img {
+    height: 300px;
+    border-radius: 16px;
+    padding: 4px;
+}
+
 
 /* media queres */
 @media(max-width:780px) {
