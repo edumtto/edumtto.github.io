@@ -1,0 +1,16 @@
+
+:root {
+    --primary100: rgb(223, 216, 252);
+    --primary200: rgba(193,177,255,1);
+    --primary400: rgba(193,157,255,1);
+    --primary800: #c19dff86;
+    --primary900: rgba(45, 38, 62, 0.525);
+    
+    --secondary100: #81a9ff;
+    --secondary300: #485a87;
+    --secondary800: #1a202c;
+
+    --grayscale000: #fff;
+    --grayscale200: #7A7C80;
+    --grayscale700: #2c2d2e;
+}
