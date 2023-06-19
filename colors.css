@@ -4,13 +4,13 @@
     --primary200: rgba(193,177,255,1);
     --primary400: rgba(193,157,255,1);
     --primary800: #c19dff86;
-    --primary900: rgba(45, 38, 62, 0.525);
+    --primary900: rgb(28, 23, 40);
     
-    --secondary100: #81a9ff;
+    --secondary100: #a1bcf5;
     --secondary300: #485a87;
     --secondary800: #1a202c;
 
     --grayscale000: #fff;
-    --grayscale200: #7A7C80;
+    --grayscale200: #a1a5aa;
     --grayscale700: #2c2d2e;
 }
