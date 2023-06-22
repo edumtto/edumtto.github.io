@@ -4,23 +4,17 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Helvetica';
-    background-color: #101214;
-    color: var(--grayscale200);
+    background-color: var(--secondary900);
+    color: var(--grayscale100);
 }
 
 a {
-    color: var(--grayscale200);
+    color: #fff;
 }
 
 h1, h2 {
     color: white;
     margin-bottom: 16px;
-}
-
-.default-container {
-    margin: 0 auto;
-    padding-top: 32px;
-    width: 80%;
 }
 
 .flex-container {
@@ -33,7 +27,7 @@ h1, h2 {
 /* Header */
 
 header {
-    background: url(img/background-tile.png), 
+    background: /*url(img/food.png), */
         linear-gradient(
             to right, 
             var(--primary900), 
@@ -71,7 +65,7 @@ header hr {
     border: 0;
     padding: 0;
     margin: 0;
-    height: 1px;
+    height: 2px;
     background-image: linear-gradient(
         to right, 
         var(--primary800), 
@@ -108,16 +102,37 @@ header .flex-container {
     padding-left: 0px;
 }
 
-/* Sections */
+/* Section */
+
+section {
+    padding-top: 64px;
+    padding-bottom: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+section hr {
+    border: 0;
+    padding-top: 0px;
+    margin-top: 32px;
+    height: 1px;
+    background-image: linear-gradient(
+        to right, 
+        var(--primary800), 
+        var(--secondary300)
+    );
+}
 
 section h2 {
-    font-size: 2.4rem;
-    font-weight: lighter;
+    margin-top: 0px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    /* text-decoration: underline; */
     color: var(--primary400);
 }
 
 section .content h3 {
-    font-weight: lighter;
+    font-weight: 300;
     margin-bottom: 4px;
     color: var(--secondary100);
 }
@@ -125,22 +140,22 @@ section .content h3 {
 /* animations / utilities */
 
 a:hover {
-    color: white;
+    color: var(--primary400);
     cursor: pointer;
     transition: 0.2s;
 }
 
 button:hover {
-    background: white;
+    background: var(--primary400);
 }
 
 button a:hover {
-    color: black;
+    color: var(--primary900);
 }
 
 button {
-    background: var(--grayscale200);
-	border: 1px solid var(--grayscale200);
+    background: var(--grayscale000);
+	border: 0px solid var(--grayscale000);
     border-radius: 16px;
 	cursor: pointer;
 	outline: inherit;
@@ -154,7 +169,7 @@ button {
 button a {
     text-decoration: none;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 700;
     color: var(--primary900);
 }
 
@@ -178,21 +193,32 @@ button a {
     margin-bottom: 16px;
 } */
 
+#section-skills .flex-container {
+    column-gap: 4px;
+}
+
 #section-skills .flex-container div {
     /* border: 1px solid #7A7C80; */
     background-color: var(--grayscale700);
-    border-radius: 4px;
-    padding: 8px;
-    margin-bottom: 8px;
+    border-radius: 2px;
+    padding: 4px;
+    margin-bottom: 4px;
+}
+
+#section-outwork img {
+    width: 100px;
 }
 
 #section-projects .flex-container {
     column-gap: 8px;
 }
 
-#section-projects .content .project-content {
-    padding-top: 16px;
-    padding-bottom: 16px;
+.project-content {
+    border: 1px solid var(--secondary300);
+    background-color: var(--secondary800);
+    padding: 24px;
+    margin-bottom: 16px;
+    border-radius: 8px;
 }
 
 .screenshots {
@@ -205,6 +231,22 @@ button a {
     height: 300px;
     border-radius: 16px;
     padding: 4px;
+}
+
+.screenshots a {
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: black;
 }
 
 /* media queries */

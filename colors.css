@@ -9,8 +9,10 @@
     --secondary100: #a1bcf5;
     --secondary300: #485a87;
     --secondary800: #1a202c;
+    --secondary900: #101214;
 
     --grayscale000: #fff;
+    --grayscale100: #cacfd4;
     --grayscale200: #a1a5aa;
     --grayscale700: #2c2d2e;
 }
