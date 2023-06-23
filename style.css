@@ -17,6 +17,14 @@ a {
     color: var(--grayscale000);
 }
 
+p, ul {
+    font-weight: 300;
+}
+
+li {
+    padding-bottom: 8px;
+}
+
 button {
     background: var(--grayscale000);
 	border: 0px solid var(--grayscale000);
@@ -52,6 +60,11 @@ button:hover {
 button a:hover {
     color: var(--primary900);
 }
+
+/* a img:hover {
+    transition: 0.2s ease;
+    box-shadow: 0 0 0 2px var(--primary200);
+} */
 
 /* || HEADER */
 
@@ -187,10 +200,6 @@ section .icon {
     margin-bottom: 4px;
 }
 
-#section-outwork img {
-    width: 100px;
-}
-
 #section-projects .flex-container {
     column-gap: 8px;
 }
@@ -212,16 +221,23 @@ section .icon {
 #section-projects .screenshots img {
     height: 300px;
     border-radius: 16px;
-    padding: 4px;
+    padding: 2px;
+    margin: 2px;
 }
 
 #section-projects .screenshots a {
     text-decoration: none;
 }
 
+#section-interests .interest-content img {
+    max-width: 1280px;
+    width: 100%;
+}
+
 /* || FOOTER */
 
 footer {
+    clear: both;
     display: flex;
     column-gap: 8px;
     justify-content: space-between;
