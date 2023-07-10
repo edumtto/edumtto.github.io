@@ -189,11 +189,23 @@ section .icon {
     box-shadow: 0px 0px 2px 2px var(--secondary800);
 }
 
+#section-about b {
+    font-weight: 400;
+    color: var(--grayscale000);
+}
+
 #section-skills .flex-container {
     column-gap: 4px;
 }
 
 #section-skills .flex-container div {
+    background-color: var(--grayscale700);
+    border-radius: 2px;
+    padding: 4px;
+    margin-bottom: 4px;
+}
+
+#section-skills b {
     background-color: var(--grayscale700);
     border-radius: 2px;
     padding: 4px;
@@ -246,6 +258,7 @@ footer {
     padding-right: 10%;
     padding-top: 16px;
     padding-bottom: 16px;
+    border-top: 1px solid var(--grayscale700);
     background-color: var(--grayscale900);
 }
 
