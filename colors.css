@@ -1,11 +1,22 @@
 
 :root {
+    /* --primary100: rgb(223, 216, 252);
+    --primary200: rgb(205, 178, 126);
+    --primary400: rgb(202, 132, 52);
+    --primary800: #9c6e1386;
+    --primary900: rgb(28, 23, 40); */
+
     --primary100: rgb(223, 216, 252);
     --primary200: rgba(193,177,255,1);
     --primary400: rgba(193,157,255,1);
     --primary800: #c19dff86;
     --primary900: rgb(28, 23, 40);
     
+    /* --secondary100: #f4f5a1;
+    --secondary300: #778748;
+    --secondary800: #2c291a;
+    --secondary900: #101214; */
+
     --secondary100: #a1bcf5;
     --secondary300: #485a87;
     --secondary800: #1a202c;

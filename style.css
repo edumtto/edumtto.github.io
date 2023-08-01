@@ -25,19 +25,6 @@ li {
     padding-bottom: 8px;
 }
 
-button {
-    background: var(--grayscale000);
-	border: 0px solid var(--grayscale000);
-    border-radius: 16px;
-	cursor: pointer;
-	outline: inherit;
-    display: inline-block;
-    padding: 4px 4px;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    margin-top: 16px;
-}
-
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -51,14 +38,6 @@ a:hover {
     color: var(--primary400);
     cursor: pointer;
     transition: 0.2s;
-}
-
-button:hover {
-    background: var(--primary400);
-}
-
-button a:hover {
-    color: var(--primary900);
 }
 
 /* a img:hover {
@@ -118,10 +97,24 @@ header hr {
     );
 }
 
-header button a {
+header .button {
     text-decoration: none;
     font-size: 16px;
     font-weight: 700;
+    color: var(--primary900);
+    background: var(--grayscale000);
+	border: 0px solid var(--grayscale000);
+    border-radius: 16px;
+	cursor: pointer;
+	outline: inherit;
+    display: inline-block;
+    padding: 4px 8px;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button:hover {
+    background: var(--primary400);
     color: var(--primary900);
 }
 
