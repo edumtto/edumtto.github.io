@@ -209,6 +209,12 @@ section .icon {
     column-gap: 8px;
 }
 
+#section-projects .link {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 8px;
+}
+
 #section-projects .project-content {
     border: 1px solid var(--secondary300);
     background-color: var(--secondary800);
