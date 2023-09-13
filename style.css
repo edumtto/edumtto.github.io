@@ -50,9 +50,9 @@ a:hover {
 header {
     background:
         linear-gradient(
-            to right, 
+            0deg, 
             var(--primary900), 
-            var(--secondary800)
+            var(--primary800)
         );
 }
 
@@ -64,11 +64,7 @@ header h1 {
 header h1 b {
     color: var(--primary800);
     font-weight: bold;
-    background: linear-gradient(
-        90deg, 
-        var(--primary400) 0%, 
-        var(--primary200) 100%
-    );
+    background: var(--primary400);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -91,9 +87,9 @@ header hr {
     margin: 0;
     height: 2px;
     background-image: linear-gradient(
-        to right, 
-        var(--primary800), 
-        var(--secondary300)
+        to bottom, 
+        var(--grayscale200), 
+        var(--grayscale700)
     );
 }
 

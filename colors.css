@@ -1,26 +1,52 @@
 
-:root {
-    /* --primary100: rgb(223, 216, 252);
-    --primary200: rgb(205, 178, 126);
-    --primary400: rgb(202, 132, 52);
-    --primary800: #9c6e1386;
-    --primary900: rgb(28, 23, 40); */
-
+/* :root {
     --primary100: rgb(223, 216, 252);
     --primary200: rgba(193,177,255,1);
     --primary400: rgba(193,157,255,1);
     --primary800: #c19dff86;
     --primary900: rgb(28, 23, 40);
     
-    /* --secondary100: #f4f5a1;
-    --secondary300: #778748;
-    --secondary800: #2c291a;
-    --secondary900: #101214; */
-
     --secondary100: #a1bcf5;
     --secondary300: #485a87;
     --secondary800: #1a202c;
     --secondary900: #101214;
+
+    --grayscale000: #fff;
+    --grayscale100: #cacfd4;
+    --grayscale200: #a1a5aa;
+    --grayscale700: #2c2d2e;
+    --grayscale900: black;
+} */
+/* 
+:root {
+    --primary100: rgb(223, 216, 252);
+    --primary200: rgb(205, 178, 126);
+    --primary400: rgb(202, 132, 52);
+    --primary800: #9c6e1386;
+    --primary900: rgb(28, 23, 40);
+
+    --secondary100: #f4f5a1;
+    --secondary300: #778748;
+    --secondary800: #2c291a;
+    --secondary900: #101214;
+
+    --grayscale000: #fff;
+    --grayscale100: #cacfd4;
+    --grayscale200: #a1a5aa;
+    --grayscale700: #2c2d2e;
+    --grayscale900: black;
+} */
+
+:root {
+    --primary200: #beb659;
+    --primary400: #e8773b;
+    --primary800: #444444;
+    --primary900: #2f2f2f;
+
+    --secondary100: #94e095;
+    --secondary300: #85cb92;
+    --secondary800: #070707;
+    --secondary900: #101412;
 
     --grayscale000: #fff;
     --grayscale100: #cacfd4;
