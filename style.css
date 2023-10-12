@@ -189,7 +189,6 @@ section .icon {
 }
 
 #section-skills .flex-container div {
-    /* background-color: var(--grayscale700); */
     border-radius: 16px;
     border: 1px solid var(--grayscale700);
     padding: 4px;
