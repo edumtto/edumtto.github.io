@@ -48,6 +48,7 @@ a:hover {
 /* || HEADER */
 
 header {
+    
     background:
         linear-gradient(
             0deg, 
@@ -188,10 +189,12 @@ section .icon {
 }
 
 #section-skills .flex-container div {
-    background-color: var(--grayscale700);
-    border-radius: 2px;
+    /* background-color: var(--grayscale700); */
+    border-radius: 16px;
+    border: 1px solid var(--grayscale700);
     padding: 4px;
     margin-bottom: 4px;
+    box-shadow: 0px 0px 2px var(--tertiary200);
 }
 
 #section-skills b {
