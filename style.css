@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Helvetica';
-    background-color: var(--secondary900);
+    background-color: var(--grayscale900);
     color: var(--grayscale100);
 }
 
@@ -227,7 +227,7 @@ section .icon {
     color-scheme: dark;
 }
 
-#section-projects .screenshots img {
+#section-projects .screenshots img, video {
     height: 300px;
     border-radius: 16px;
     padding: 2px;
