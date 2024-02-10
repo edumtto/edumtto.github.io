@@ -8,43 +8,44 @@ body {
   font-family: 'Quicksand', Courier, monospace;
   background-image: linear-gradient(45deg, #4d46d2, #908afc, #fc8ac5, #f79fa6, #FCD08A, #F7CA34);
   background-size: 400% 400%;
-  animation: gradient-animation 15s ease infinite;
+  animation: gradient-animation 25s ease infinite;
   height: 100vh;
   width: 100%;
 }
 
 h2 {
   font-family: 'Bree Serif', Courier, monospace;
-  padding: 24px 0px 8px 0px;
+  padding: 24px 0px 8px 8px;
   margin: auto;
 }
-
-button {
-  font-size: 14px;
-  padding: 8px;
-  border-radius: 8px;
-  background-color: transparent;
-  border-width: 2px;
-  border-color: rgb(0, 0, 0);
-}
-
-/* button:hover {
-  background-color: #333;
-} */
-
 
 .container {
   display: flex;
   flex-direction: row;
   /* flex-wrap: wrap; */
   height: 100vh;
-  
 }
 
 .left-column {
   /* flex: 1; */
   padding: 20px;
   align-items: center;
+}
+
+.button {
+  padding: 8px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 14px;
+  background-color: white;
+  border-color: black;
+  text-decoration: none;
+}
+
+.button:hover {
+  border: 1px solid rgba(227, 132, 0);
+  box-shadow: 0 4px 30px rgba(255, 179, 0, 0.659);
 }
 
 .right-column {
@@ -75,11 +76,11 @@ button {
 }
 
 .profile img {
-  width: 256px;
-  height: 256px;
+  width: 224px;
+  height: 224px;
   border-radius: 50%;
   margin: 16px;
-  padding: 1px;
+  padding: 4px;
   border: 1px #949494 solid;
 }
 
@@ -100,6 +101,7 @@ button {
 
 .profile li {
   margin: 10px;
+  align-content: center;
 }
 
 .profile li a {
@@ -108,16 +110,33 @@ button {
   
 }
 
-.product {
+.right-column a {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
+  text-align: left;
   gap: 20px;
-  padding-bottom: 16px;
+  /* width: 100%; */
+  border-color: transparent;
+  background-color: transparent;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  margin: 8px 0px 8px 0px; 
+}
+
+.right-column a:hover {
+  background-color: rgba(255, 255, 255, 0.502);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .product img {
-  width: 64px;
+  width: 48px;
+  height: 48px;
   border: 2px rgb(147, 147, 147) solid;
   border-radius: 8px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
