@@ -2,84 +2,52 @@
 <html>
 
 <head>
-  <title>Resume Website</title>
+  <title>Eduardo Oliveira - Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://kit.fontawesome.com/0e1eac6e44.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="animation"></div>
 
   <div class="container">
-    <div class="left-column">
+    <section class="profile">
 
-      <div class="profile">
+      <div class="profile-avatar">
         <img src="img/avatar.jpg" alt="Avatar">
-        <h2>Eduardo Oliveira </h2>
-        <p>Software Developer 🇧🇷🇺🇸</p>
-        <p><i class="fa-regular fa-location-dot"></i> Sacramento, CA</p>
-        <ul class="social-media">
-          <li><a href="https://www.linkedin.com/in/edumottaoliveira/"><i class="fab fa-2x fa-linkedin"></i></a></li>
-          <li><a href="https://github.com/edumtto/"><i class="fab fa-2x fa-github"></i></a></li>
-          <li><a class="button" href="#">Contact me</a></li>
-        </ul>
-
-        <ul>
-          <li>B.S. Computer Science</li>
-          <li>A.S. Computer Networking</li>
-          <li>6 years in iOS Development</li>
-          <li>Passionated by science and technology</li>
-        </ul>
-
       </div>
 
+      <div class="profile-description">
+        <div class="profile-name">
+          <h1>Eduardo Motta de Oliveira</h1>
+          <p><b>Software Developer 🇧🇷🇺🇸</b></p>
+        </div>
 
-    </div>
-    <div class="right-column">
-      <!-- Add the sections Skills, Projects, etc. here -->
-      <!-- <h2>Skills</h2>
-      <h3>iOS Technologies</h3>
-      <p>Swift |
-        Objective-C |
-        UIKit
-        SwiftUI
-        CoreData
-        Core Animation
-        URLSession
-        XCTest
-        TestFlight
-        CocoaPods
-        Apple design principles</p>
+        <div class="contacts">
+          <p><i class="fa-regular fa-location-dot"></i> Sacramento, CA</p>
 
-      <h3>App features and demands</h3>
-      <p>
-        auto layout
-        data persistence
-        networking
-        notifications
-        accessibility
-        dependency management
-        multithreading
-        state management
-        authentication
-        testing
-        MVC
-        MVVM
-      </p>
+          <ul class="social-media-list">
+            <li><a href="https://www.linkedin.com/in/edumottaoliveira/"><i class="fab fa-1x fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/edumtto/"><i class="fab fa-1x fa-github"></i></a></li>
+            <li><a href="mailto:edumottaoliveira@gmail.com"><i class="fa-solid fa-1x fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-      <h3>Collaboration</h3>
-      <p>
-        git
-        technical documentation
-        code review
-        agile development
-        efficient communication
-        technical leadership
-      </p> -->
+    <ul class="bubble-tags">
+      <li>B.S. Computer Science</li>
+      <li>A.S. Computer Networking</li>
+      <li>6 years in iOS Development</li>
+      <li>Passionated by science and technology</li>
+    </ul>
 
+    <hr />
+
+    <section class="projects">
       <h2>Projects</h2>
 
       <a class="product" href="picpay.html">
@@ -116,7 +84,12 @@
           <p>Attendance web app written in React. (in development)</p>
         </div>
       </a>
+    </section>
 
+    
+    <hr />
+    
+    <section class="interests">
       <h2>Interests</h2>
       <ul>
         <li>🤖 Generative AI</li>
@@ -128,8 +101,10 @@
         <li>🐧 Linux and Open Source</li>
         <li>🍎 iOS and MacOS</li>
       </ul>
+    </section>
+     
  
-    </div>
+    </section>
   </div>
 </body>
 
