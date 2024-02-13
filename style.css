@@ -54,10 +54,10 @@ body {
 
 .profile h1 {
   padding: 0;
-  margin: 0;;
+  margin: 0;
 }
 
-.profile img {
+.profile-avatar img {
   width: 192px;
   height: 192px;
   border-radius: 50%;
@@ -90,6 +90,8 @@ ul.social-media-list a:hover {
   flex-direction: row;
   column-gap: 8px;
   flex-wrap: wrap;
+  padding: 8px 16px 8px 16px;
+  align-items: center;
 }
 
 .bubble-tags li {
@@ -98,11 +100,6 @@ ul.social-media-list a:hover {
   border-radius: 8px;
   margin-bottom: 8px;
   list-style-type: none;
-}
-
-button {
-  position: fixed ;
-  right: 0px;
 }
 
 /*---------- PROJECTS SECTION ----------*/
@@ -143,8 +140,12 @@ button {
 
 /*---------- PROJECT SUBPAGE ----------*/
 
-.project-container {
+.project-container h1 {
   padding: 16px 0px 16px 0px;
+}
+
+.project-container .project-full-description {
+  padding-left: 16px;
 }
 
 .project-container .project-header img {
@@ -183,6 +184,14 @@ button {
 @media screen and (max-width: 768px) {
   .profile {
     flex-direction: column;
+  }
+
+  .profile-name * {
+    text-align: center;
+  }
+
+  .contacts * {
+    text-align: center;
   }
 
   .interests ul {
