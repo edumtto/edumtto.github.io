@@ -23,7 +23,9 @@ img, video {
 }
 
 body {
-  font-family: 'Quicksand', Courier, monospace;
+  font-family: 'Quicksand', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.1rem;
   max-width: 768px;
   margin: auto;
 }
@@ -36,6 +38,7 @@ body {
   align-items: center;
 }
 
+/*---------- PROFILE SECTION ----------*/
 .profile {
   display: flex;
   flex-direction: row;
@@ -46,7 +49,7 @@ body {
 
 .profile h1 {
   padding: 0;
-  margin: 0;
+  margin: 0;;
 }
 
 .profile img {
@@ -92,6 +95,8 @@ ul.social-media-list a:hover {
   list-style-type: none;
 }
 
+/*---------- PROJECTS SECTION ----------*/
+
 .projects a {
   display: flex;
   flex-direction: row;
@@ -105,7 +110,6 @@ ul.social-media-list a:hover {
 .product img {
   width: 48px;
   height: 48px;
-  border: 1px rgb(147, 147, 147) solid;
   border-radius: 8px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
@@ -113,6 +117,8 @@ ul.social-media-list a:hover {
 .product-description p, h3 {
   margin: 4px;
 }
+
+/*---------- INTERESTS SECTION ----------*/
 
 .interests ul {
   column-count: 3;
@@ -125,15 +131,7 @@ ul.social-media-list a:hover {
   margin-bottom: 8px;
 }
 
-@media screen and (max-width: 768px) {
-  .profile {
-    flex-direction: column;
-  }
-
-  .interests ul {
-    column-count: 2;
-  }
-}
+/*---------- PROJECT SUBPAGE ----------*/
 
 .project-container {
   padding: 16px 0px 16px 0px;
@@ -151,6 +149,11 @@ ul.social-media-list a:hover {
   align-items: center;
 }
 
+.project-container .links  img {
+  border: none;
+  box-shadow: none;
+}
+
 .project-container .screenshots {
   padding-top: 16px;
   /* overflow: auto;
@@ -163,4 +166,16 @@ ul.social-media-list a:hover {
   width: 138px;
   margin: 4px;
   border-radius: 16px;
+}
+
+/*---------- MEDIA SCREEN ----------*/
+
+@media screen and (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+  }
+
+  .interests ul {
+    column-count: 2;
+  }
 }
