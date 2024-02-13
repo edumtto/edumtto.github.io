@@ -14,7 +14,12 @@ a:visited {
 
 hr {
   border: none;
-  border-bottom: 1px solid #9b9b9b;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+img, video {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -50,7 +55,6 @@ body {
   border-radius: 50%;
   margin: 16px;
   padding: 4px;
-  border: 1px #949494 solid;
 }
 
 ul.social-media-list {
@@ -70,7 +74,7 @@ ul.social-media-list a {
 }
 
 ul.social-media-list a:hover {
-  color: #f4ba3d;
+  color: #553df4;
 }
 
 .bubble-tags {
@@ -81,7 +85,7 @@ ul.social-media-list a:hover {
 }
 
 .bubble-tags li {
-  border: 1px #949494 solid;
+  border: 1px rgba(0, 0, 0, 0.2) solid;
   padding: 4px;
   border-radius: 8px;
   margin-bottom: 8px;
@@ -138,7 +142,6 @@ ul.social-media-list a:hover {
 .project-container .project-header img {
   width: 48px;
   height: 48px;
-  border: 1px rgb(147, 147, 147) solid;
   border-radius: 8px;
 }
 
@@ -159,6 +162,5 @@ ul.social-media-list a:hover {
   height: 300px;
   width: 138px;
   margin: 4px;
-  border: 1px gray solid;
   border-radius: 16px;
 }
