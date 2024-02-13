@@ -1,376 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="colors.css">
-    <script src="https://kit.fontawesome.com/0e1eac6e44.js" crossorigin="anonymous"></script>
-    <title>Eduardo Oliveira</title>
+  <title>Eduardo Oliveira - Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/0e1eac6e44.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <div class="flex-container">
-            <!-- Picture -->
-            <img id="avatar" src="img/avatar.png" alt="avatar picture">
-            <!-- Hi, I'm ... -->
-            <div id="avatar-text">
-                <h1>Hi, I'm <b>Eduardo Oliveira</b> (Eddie).</h1>
-                <p>A Brazilian iOS developer located in Sacramento, CA.
-                    I have 6 years in the field and I'm passionate about product development.
-                    Welcome to my page! </p>
+  <div class="container">
+    <section class="profile">
 
-                <div id="avatar-buttons">
-                    <a href="https://www.linkedin.com/in/edumottaoliveira/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/edumtto/"><i class="fab fa-github"></i></a>
+      <div class="profile-avatar">
+        <img src="img/avatar.jpg" alt="Avatar">
+      </div>
 
-                    <a href="pdfs/resume.pdf" class="button">
-                        Resume <i class="fa-solid fa-file-text"></i>
-                    </a>
-                </div>
-            </div>
+      <div class="profile-description">
+        <div class="profile-name">
+          <h1>Eduardo Motta de Oliveira</h1>
+          <p><b>Software Developer 🇧🇷🇺🇸</b></p>
         </div>
 
-        <div class="flex-container-compact">
-            <img id="avatar-compact" src="img/avatar.png" alt="avatar picture">
-            <div id="avatar-buttons-compact">
-                <a href="https://www.linkedin.com/in/edumottaoliveira/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/edumtto/"><i class="fab fa-github"></i></a>
+        <div class="contacts">
+          <p><i class="fa-regular fa-location-dot"></i> Sacramento, CA</p>
 
-                <a href="pdfs/resume.pdf" class="button">
-                    Resume <i class="fa-solid fa-file-text"></i>
-                </a>
-            </div>
+          <ul class="social-media-list">
+            <li><a href="https://www.linkedin.com/in/edumottaoliveira/"><i class="fab fa-1x fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/edumtto/"><i class="fab fa-1x fa-github"></i></a></li>
+            <li><a href="mailto:edumottaoliveira@gmail.com"><i class="fa-solid fa-1x fa-envelope"></i></a></li>
+          </ul>
         </div>
-        <hr>
-    </header>
-
-
-    <!-- ABOUT ME SECTION -->
-    <section id="section-about" class="default-container">
-        <h2>ABOUT ME</h2>
-        <div class="content">
-            <p>
-                Fascinated by science and technology, I initially pursued a degree in Computer Networks. However, my true passion lies in software development. 
-                After exploring different paths, I pursued a degree in Computer Science at a prestigious university in Brazil. 
-                I furthered my education by studying abroad in the United States. Since then, I have focused on app development for iPhones, particularly in Swift. 
-                My goal is to bridge the gap between existing technology and creating immersive and meaningful interactive experiences.
-            </p>
-        </div>
+      </div>
     </section>
 
+    <ul class="bubble-tags">
+      <li>B.S. Computer Science</li>
+      <li>A.S. Computer Networking</li>
+      <li>6 years in iOS Development</li>
+      <li>Passionated by Science and Technology</li>
+      <li>Motivated by Product Development</li>
+    </ul>
 
-    <!-- SKILLS SECTION -->
-    <!-- <section id="section-skills" class="default-container">
-        <h2>SKILLS</h2>
+    <hr />
 
-        <div class="content">
-            <ul>
-                <li>Strong knowledge of <b>Swift</b> and working knowledge with <b>Objective-C</b>.</li>
-                <li>Knowledge of <b>iOS UI design</b> principles, patterns, and best practices in customer facing apps.
-                </li>
-                <li>Proficient using <b>RESTful APIs</b> to connect iOS applications to back-end services.</li>
-                <li>Experience with <b>offline storage</b>, <b>threading</b>, and <b>performance tuning</b>.</li>
-                <li>Experience with the <b>full application lifecycle</b> (concept, design, test, release and support)
-                </li>
-                <li>A solid understanding and appreciation for <b>Agile</b> tools, processes, and methodology.</li>
-                <li>Excellent <b>communication</b> and experience with popular <b>collaboration tools</b> (Git, Jira,
-                    Figma, Slack).</li>
-                <li>Growth mindset, open, adaptable, curious, <b>self-learner</b>.</li>
-                <li>Knowledge in Computer Science, data structures, algorithms, and overall software design.</li>
-            </ul>
+    <section class="projects">
+      <h2>Projects</h2>
+
+      <a class="product" href="picpay.html">
+        <img src="img/picpay-icon.jpg" />
+        <div class="product-description">
+          <h3>PicPay</h3>
+          <p>The top Brazilian digital wallet app. I played a pivotal role in developing various features for PicPay.
+          </p>
         </div>
-    </section> -->
+      </a>
 
-    <section id="section-skills" class="default-container">
-        <h2>SKILLS AND EXPERIENCE</h2>
-
-        <div class="content">
-            <!-- <h3><i class="fa-brands fa-swift"></i> Languages</h3>
-            <div class="flex-container">
-                <div>Swift</div>
-                <div>Objective-C</div>
-                <div>C</div>
-                <div>C++</div>
-                <div>Java</div>
-                <div>Python</div>
-            </div> -->
-
-            <h3><i class="fa-brands fa-apple"></i> iOS Technologies</h3>
-            <div class="flex-container">
-                <div>Swift</div>
-                <div>Objective-C</div>
-                <div>UIKit</div>
-                <div>SwiftUI</div>
-                <div>CoreData</div>
-                <div>Core Animation</div>
-                <div>URLSession</div>
-                <div>XCTest</div>
-                <div>TestFlight</div>
-                <div>CocoaPods</div>
-                <div>Apple design principles</div>
-            </div>
-            
-            <h3><i class="fa-solid fa-mobile"></i> App features and demands</h3>
-            <div class="flex-container">
-                <div>auto layout</div>
-                <div>data persistence</div>
-                <div>networking</div>
-                <div>notifications</div>
-                <div>accessibility</div>
-                <div>dependency management</div>
-                <div>multithreading</div>
-                <div>state management</div>
-                <div>authentication</div>
-                <div>testing</div>
-                <div>MVC</div>
-                <div>MVVM</div>
-            </div>
-            
-            <!-- <h3><i class="fa-solid fa-sitemap"></i> Architectures</h3>
-            <div class="flex-container">
-                <div>MVC, MVVM, VIPER</div>
-                <div>coordinator</div>
-                <div>dependency management</div>
-                <div>one-way data flow, VIP</div>
-                <div>multithreading</div>
-            </div> -->
-            
-            <!-- <h3><i class="fa-solid fa-check"></i> Quality assurance and Collaboration </h3>
-            <div class="flex-container">
-                <div>clean code</div>
-                <div>documentation</div>
-                <div>code review</div>
-            </div> -->
-            
-            <h3><i class="fa-solid fa-people-group"></i> Collaboration</h3>
-            <div class="flex-container">
-                <div>git</div>
-                <div>technical documentation</div>
-                <div>code review</div>
-                <!-- <div>Jira</div> -->
-                <div>agile development</div>
-                <div>efficient communication</div>
-                <div>technical leadership</div>
-            </div>
+      <a class="product" href="pick-lottery.html">
+        <img src="img/picklottery-icon.png" />
+        <div class="product-description">
+          <h3>PickLottery</h3>
+          <p>Pick random results from a custom list, with features to avoid repetition and balance results.
+            Implemented in SwiftUI. Include light/dark themes.</p>
         </div>
+      </a>
+
+      <a class="product" href="word-search.html">
+        <img src="img/wordsearch-icon.png" />
+        <div class="product-description">
+          <h3>WordSearch</h3>
+          <p>Classical word search game with procedural board creation. My first personal project implementing SwiftUI.
+          </p>
+        </div>
+      </a>
+
+      <a class="product">
+        <img src="img/checkpoint-icon.png" />
+        <div class="product-description">
+          <h3>Checkpoint</h3>
+          <p>Attendance web app written in React. (in development)</p>
+        </div>
+      </a>
     </section>
 
-
-    <!-- PROJECTS SECTION -->
-    <section id="section-projects" class="default-container">
-        <h2>PROJECTS</h2>
-
-        <div class="content">
-            <div class="project-content">
-                <div class="flex-container">
-                    <img src="img/picpay-icon.jpg" class="icon" alt="picpay icon">
-                    <h3>PicPay</h3>
-                    <a href="https://investor.picpay.com/company-info/our-products/" class="link" target="_blank"><i class="fa-solid fa-link"></i></a>
-                </div>
-
-                <p>
-                    For over four years, I played a pivotal role in developing various features for PicPay, a widely
-                    popular digital wallet app with millions of users. Please note that the app is currently only
-                    available in the Brazilian App Store.
-                </p>
-                <p>
-                    Throughout my tenure, I leveraged the following technologies to bring these features to life:
-                </p>
-                <ul>
-                    <li>UIKit in conjunction with programmatic layout for designing visually appealing and
-                        intuitive interfaces.</li>
-                    <li>MVVM, Coordinator, and Modular architecture for organizing code and promoting flexibility and
-                        scalability.</li>
-                    <li>Keychain for securely storing sensitive data.</li>
-                    <li>Push notifications for real-time updates and engagement.</li>
-                    <li>Camera for scanning QR Codes and Bar Codes, providing seamless and convenient transactions.</li>
-                    <li>Dispatch queues for handling asynchronous flow and ensuring optimal performance.</li>
-                    <li>REST API connections to facilitate communication with external services.</li>
-                    <li>Analytics tools for monitoring usage and gathering insights.</li>
-                </ul>
-                <p> Please find below some screenshots showcasing the products I contributed to.</p>
-
-                <div class="screenshots">
-                    <a href="img/screenshots/picpay.png">
-                        <img src="img/screenshots-sm/picpay.png" alt="screenshot 1">
-                    </a>
-                    <a href="img/screenshots/picpay2.png">
-                        <img src="img/screenshots-sm/picpay2.png" alt="screenshot 2">
-                    </a>
-                    <a href="img/screenshots/picpay3.png">
-                        <img src="img/screenshots-sm/picpay3.png" alt="screenshot 3">
-                    </a>
-                    <a href="img/screenshots/picpay4.png">
-                        <img src="img/screenshots-sm/picpay4.png" alt="screenshot 4">
-                    </a>
-                    <a href="img/screenshots/picpay5.png">
-                        <img src="img/screenshots-sm/picpay5.png" alt="screenshot 5">
-                    </a>
-                    <a href="img/screenshots/picpay6.png">
-                        <img src="img/screenshots-sm/picpay6.png" alt="screenshot 6">
-                    </a>
-                    <a href="img/screenshots/picpay7.png">
-                        <img src="img/screenshots-sm/picpay7.png" alt="screenshot 7">
-                    </a>
-                    <a href="img/screenshots/picpay8.png">
-                        <img src="img/screenshots-sm/picpay8.png" alt="screenshot 8">
-                    </a>
-                    <a href="img/screenshots/picpay9.png">
-                        <img src="img/screenshots-sm/picpay9.png" alt="screenshot 9">
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-content">
-                <div class="flex-container">
-                    <img src="img/wordsearch-icon.png" class="icon" alt="wordsearch icon">
-                    <h3>WordSearch</h3>
-                    <a href="https://github.com/edumtto/word-search" class="link"><i class="fa-solid fa-link" target="_blank"></i></a>
-                </div>
-
-                <p>This experimental project is centered around my exploration of SwiftUI, animations, and the
-                    NavigationPath feature for seamless scene navigation.</p>
-                <p>
-                    To bring this project to life, I utilized the following technologies:
-                </p>
-                <ul>
-                    <li>SwiftUI for creating dynamic layouts and animations.</li>
-                    <li>MVVM architecture for organizing my code and ensuring a scalable and maintainable codebase.</li>
-                    <li>XCTest for conducting rigorous unit testing, guaranteeing the application's functionality and
-                        stability.</li>
-                </ul>
-                <div class="screenshots">
-                    <a href="img/screenshots/wordsearch0.png">
-                        <img src="img/screenshots-sm/wordsearch0.png" alt="screenshot 1">
-                    </a>
-                    <a href="img/screenshots/wordsearch1.png">
-                        <img src="img/screenshots-sm/wordsearch1.png" alt="screenshot 2">
-                    </a>
-                    <a href="img/screenshots/wordsearch2.png">
-                        <img src="img/screenshots-sm/wordsearch2.png" alt="screenshot 3">
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-content">
-                <div class="flex-container">
-                    <img src="img/picklottery-icon.png" class="icon" alt="picklottery icon">
-                    <h3>PickLottery</h3>
-                    <a href="https://github.com/edumtto/pick-lottery" class="link"><i
-                            class="fa-solid fa-link"></i></a>
-                    <a href="https://apps.apple.com/us/app/picklottery/id6457203925" class="link" target="_blank">
-                        <img src="img/badge-appstore.svg" alt="app store badge">
-                    </a>
-                </div>
-                <p>
-                    This personal project demonstrates my proficiency in leveraging the power of the CoreData framework
-                    in conjunction with the dynamic and sleek design capabilities of SwiftUI. 
-                    The UI of this app has also been specifically designed and optimized to support the dark mode.
-                </p>
-                <p>
-                    The project was crafted utilizing the following technologies:
-                </p>
-                <ul>
-                    <li>SwiftUI for creating layouts and animations.</li>
-                    <li>MVVM architecture.</li>
-                    <li>XCTest for comprehensive unit testing.</li>
-                </ul>
-
-                <div class="screenshots">
-                    <video controls>
-                        <source src="video/picklottery.mp4" type="video/mp4" alt="video capture">
-                        Your browser does not support the video tag.
-                    </video>
-                    <a href="img/screenshots/picklot0.png">
-                        <img src="img/screenshots-sm/picklot0.png" alt="screenshot 1">
-                    </a>
-                    <a href="img/screenshots/picklot1.png">
-                        <img src="img/screenshots-sm/picklot1.png" alt="screenshot 2">
-                    </a>
-                    <a href="img/screenshots/picklot2.png">
-                        <img src="img/screenshots-sm/picklot2.png" alt="screenshot 3">
-                    </a>
-                    <a href="img/screenshots/picklot3.png">
-                        <img src="img/screenshots-sm/picklot3.png" alt="screenshot 4">
-                    </a>
-                </div>
-            </div>
-
-            <!-- <div class="project-content">
-                <div class="flex-container">
-                    <img src="img/superrecipies-icon.png" class="icon"alt="">
-                    <h3>SuperRecipes</h3>
-                </div>
-                <p>Technologies: SwiftUI • REST API connection</p>
-                <div class="screenshots">
-                    <a href="img/screenshots/superrec0.png">
-                        <img src="img/screenshots-sm/superrec0.png"alt="">
-                    </a>
-                    <a href="img/screenshots/superrec1.png">
-                        <img src="img/screenshots-sm/superrec1.png"alt="">
-                    </a>
-                    <a href="img/screenshots/superrec2.png">
-                        <img src="img/screenshots-sm/superrec2.png"alt="">
-                    </a>
-                </div>
-            </div> -->
-        </div>
-    </section>
-
-    <!-- INTERESTS SECTION -->
-    <section class="default-container" id="section-interests">
-        <h2>INTERESTS</h2>
-        <div class="content">
-            <h3>Photography</h3>
-
-            <div class="interest-content">
-                <p>
-                    One of my deepest passions is photography, with a particular affinity for capturing the beauty of
-                    nature and landscapes.<br />Please feel free to browse some of my 
-                    <a href="https://photos.app.goo.gl/TqmSfmGaYcajdMrW7">favorite shots</a>.
-                </p>
-                <!-- <a href="https://photos.app.goo.gl/TqmSfmGaYcajdMrW7"><img src="img/pictures.png"
-                        alt="picture mosaic"></a> -->
-
-            </div>
-
-            <h3>Theater</h3>
-            <div class="interest-content">
-                <p>
-                    Between 2019 and 2020, I attended acting and play creation classes at a <a href="https://www.facebook.com/cenaescoladeatores/">school in Brazil</a>.
-                    It was one of the most challenging experiences I already had.
-                    However, due to the pandemic, our final project had to be conducted remotely via Zoom. 
-                    If you're interested, you can watch a video of one of the recorded presentations
-                     <a href="https://www.youtube.com/watch?v=VhCr38IZHJc&list=WL&index=146&t=998s">here.</a>
-                </p>
-            </div>
-            
     
-            <!-- <h3>3D modeling</h3>
-            <p>I'm still obsessed in learning 3D modeling and rendering. Those are some of my experiments until now.</p>
+    <hr />
     
-            <h3>Plants</h3>
-            <p>Nature energise me, so taking care of plants and watching them grow is amazing.</p> -->
-
-        </div>
+    <section class="interests">
+      <h2>Interests</h2>
+      <ul>
+        <li>🍎 iOS and MacOS</li>
+        <li>🤖 Generative AI</li>
+        <li>📷 Photography</li>
+        <li>🕹️ 3D modeling</li>
+        <li>🧮 Optimization algorithms</li>
+        <li>🥽 Virtual reality</li>
+        <li>🪐 Space and Astronomy</li>
+        <li>🐧 Linux and Open Source</li>
+      </ul>
     </section>
-
-    <footer>
-        <div>
-            Don't hesitate to reach out! You can find my contact information
-            <a href="pdfs/resume.pdf">here</a>.
-        </div>
-        <div>
-            <small>&copy; Copyright 2023, Eduardo Oliveira</small>
-        </div>
-    </footer>
-
+     
+ 
+    </section>
+  </div>
 </body>
 
 </html>
