@@ -26,8 +26,13 @@ body {
   font-family: 'Quicksand', sans-serif;
   font-optical-sizing: auto;
   font-size: 1.1rem;
+}
+
+.container {
   max-width: 768px;
   margin: auto;
+  background-color: white;
+  padding: 8px;
 }
 
 .flex-container {
@@ -93,6 +98,11 @@ ul.social-media-list a:hover {
   border-radius: 8px;
   margin-bottom: 8px;
   list-style-type: none;
+}
+
+button {
+  position: fixed ;
+  right: 0px;
 }
 
 /*---------- PROJECTS SECTION ----------*/
