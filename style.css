@@ -28,7 +28,7 @@ body {
   font-size: 1.1rem;
 }
 
-.container, .project-container {
+main, .project-container {
   max-width: 768px;
   margin: auto;
   background-color: white;
@@ -57,7 +57,7 @@ body {
   margin: 0;
 }
 
-.profile-avatar img {
+.profile img {
   width: 192px;
   height: 192px;
   border-radius: 50%;
@@ -65,23 +65,23 @@ body {
   padding: 4px;
 }
 
-ul.social-media-list {
+.profile__info__links {
   margin: 0;
   padding: 0;
 }
 
-ul.social-media-list li {
+.profile__info__links li {
   display: inline-block;
   margin-right: 12px;
   list-style-type: none;
 }
 
-ul.social-media-list a {
+.profile__info__links a {
   color: #333;
   text-decoration: none;
 }
 
-ul.social-media-list a:hover {
+.profile__info__links a:hover {
   color: #553df4;
 }
 
@@ -186,11 +186,11 @@ ul.social-media-list a:hover {
     flex-direction: column;
   }
 
-  .profile-name * {
+  .profile__info * {
     text-align: center;
   }
 
-  .contacts * {
+  .profile__info__links * {
     text-align: center;
   }
 
