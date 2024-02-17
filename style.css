@@ -25,7 +25,7 @@ img, video {
 body {
   font-family: 'Quicksand', sans-serif;
   font-optical-sizing: auto;
-  font-size: 1.1rem;
+  font-size: medium;
 }
 
 main {
