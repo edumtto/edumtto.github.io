@@ -28,14 +28,14 @@ body {
   font-size: 1.1rem;
 }
 
-main, .project-container {
+main {
   max-width: 768px;
   margin: auto;
   background-color: white;
   padding: 8px;
 }
 
-.flex-container {
+.row-container {
   display: flex;
   flex-direction: row;
   column-gap: 8px;
@@ -44,6 +44,7 @@ main, .project-container {
 }
 
 /*---------- PROFILE SECTION ----------*/
+
 .profile {
   display: flex;
   flex-direction: row;
@@ -85,7 +86,7 @@ main, .project-container {
   color: #553df4;
 }
 
-.bubble-tags {
+.profile__tags {
   display: flex;
   flex-direction: row;
   column-gap: 8px;
@@ -94,7 +95,7 @@ main, .project-container {
   align-items: center;
 }
 
-.bubble-tags li {
+.profile__tags li {
   border: 1px rgba(0, 0, 0, 0.2) solid;
   padding: 4px;
   border-radius: 8px;
@@ -104,7 +105,7 @@ main, .project-container {
 
 /*---------- PROJECTS SECTION ----------*/
 
-.projects a {
+main section a {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -114,65 +115,65 @@ main, .project-container {
   padding: 8px 8px 8px 16px;
 }
 
-.product img {
+section img {
   width: 48px;
   height: 48px;
   border-radius: 8px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-.product-description p, h3 {
+.section__item__text p, h3 {
   margin: 4px;
 }
 
 /*---------- INTERESTS SECTION ----------*/
 
-.interests ul {
+.section__list {
   column-count: 3;
   column-gap: 20px;
   padding: 8px 8px 8px 16px;
   list-style-type: none;
 }
 
-.interests li {
+.section__list li {
   margin-bottom: 8px;
 }
 
 /*---------- PROJECT SUBPAGE ----------*/
 
-.project-container h1 {
+.project h1 {
   padding: 16px 0px 16px 0px;
 }
 
-.project-container .project-full-description {
+.project__description {
   padding-left: 16px;
 }
 
-.project-container .project-header img {
+.project__header img {
   width: 48px;
   height: 48px;
   border-radius: 8px;
 }
 
-.project-container .links {
+.project .links {
   padding: 16px 0px 16px 0px;
   gap: 24px;
   align-items: center;
 }
 
-.project-container .links  img {
+.project .links  img {
   border: none;
   box-shadow: none;
 }
 
-.project-container .screenshots {
+.project__screenshots {
   padding-top: 16px;
   /* overflow: auto;
   white-space: nowrap;
   color-scheme: dark; */
 }
 
-.project-container .screenshots img, video {
+.project__screenshots img, video {
   height: 300px;
   width: 138px;
   margin: 4px;
