@@ -195,7 +195,7 @@ section img {
     text-align: center;
   }
 
-  .interests ul {
+  .section__list {
     column-count: 2;
   }
 }
