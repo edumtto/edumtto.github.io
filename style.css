@@ -166,6 +166,14 @@ section img {
   box-shadow: none;
 }
 
+.project .links a {
+  text-decoration: underline;
+}
+
+.project .links a:hover {
+  color: steelblue;
+}
+
 .project__screenshots {
   padding-top: 16px;
   /* overflow: auto;
