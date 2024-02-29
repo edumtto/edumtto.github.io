@@ -43,6 +43,10 @@ main {
   align-items: center;
 }
 
+:root {
+  --accent: #0071e3;
+}
+
 /*---------- PROFILE SECTION ----------*/
 
 .profile {
@@ -83,24 +87,26 @@ main {
 }
 
 .profile__info__links a:hover {
-  color: #553df4;
+  color: var(--accent);
 }
 
 .profile__tags {
   display: flex;
   flex-direction: row;
-  column-gap: 8px;
   flex-wrap: wrap;
   padding: 8px 16px 8px 16px;
   align-items: center;
 }
 
 .profile__tags li {
-  border: 1px rgba(0, 0, 0, 0.2) solid;
-  padding: 4px;
-  border-radius: 8px;
-  margin-bottom: 8px;
+  padding: 0px 12px 0px 12px;
+  border-right: solid 1px black;
+  margin: 4px 0px 8px 0px;
   list-style-type: none;
+}
+
+.profile__tags li:last-child {
+  border: none;
 }
 
 /*---------- PROJECTS SECTION ----------*/
@@ -124,6 +130,10 @@ section img {
 
 .section__item__text p, h3 {
   margin: 4px;
+}
+
+a:hover h3 {
+  color: var(--accent);
 }
 
 .feature-tags {
@@ -189,7 +199,7 @@ section img {
 }
 
 .project .links a:hover {
-  color: steelblue;
+  color: var(--accent);
 }
 
 .project__screenshots {
