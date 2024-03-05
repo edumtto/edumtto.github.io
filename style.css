@@ -111,14 +111,18 @@ main {
 
 /*---------- PROJECTS SECTION ----------*/
 
-main section a {
+section h2 {
+  padding-left: 8px;
+}
+
+section a {
   display: flex;
   flex-direction: row;
   align-items: center;
   text-align: left;
   gap: 8px;
   text-decoration: none;
-  padding: 8px 8px 8px 16px;
+  padding: 8px 8px 8px 8px;
 }
 
 section img {
@@ -163,7 +167,7 @@ a:hover h3::after {
 .section__list {
   column-count: 3;
   column-gap: 20px;
-  padding: 8px 8px 8px 16px;
+  padding: 8px 8px 8px 8px;
   list-style-type: none;
 }
 
