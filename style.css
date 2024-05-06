@@ -26,6 +26,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   font-optical-sizing: auto;
   font-size: medium;
+  /* animation: fadein 1s; */
 }
 
 main {
@@ -47,6 +48,49 @@ main {
   --accent: #0071e3;
 }
 
+/*---------- ANIMATIONS ----------*/
+
+.fadein-animation {
+  animation: fadein 1s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+}
+
+.reveal-up-animation {
+  display: block;
+  animation: reveal-up 1s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+}
+
+.reveal-down-animation {
+  display: block;
+  animation: reveal-down 1s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+}
+
+@keyframes reveal-up {
+  0% {
+    transform: translate(0,100%);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+@keyframes reveal-down {
+  0% {
+    transform: translate(0,-100%);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 /*---------- PROFILE SECTION ----------*/
 
 .profile {
@@ -57,9 +101,8 @@ main {
   gap: 18px;
 }
 
-.profile h1 {
-  padding: 0;
-  margin: 0;
+.profile h1,p {
+  overflow: hidden;
 }
 
 .profile img {
