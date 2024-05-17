@@ -106,11 +106,11 @@ main {
 }
 
 .profile img {
-  width: 192px;
-  height: 192px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   margin: 16px;
-  padding: 4px;
+  /* padding: 4px; */
 }
 
 .profile__info__links {
