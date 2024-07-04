@@ -117,9 +117,10 @@ main .links a:hover {
   flex-direction: column;
   gap: 32px;
   background-color: #4949dd;
-  margin-left: auto;
+  background: linear-gradient(7deg, rgba(114,63,202,1) 0%, rgba(100,100,224,1) 61%, rgba(0,168,229,1) 100%);
   margin-right: auto;
   border-radius: 16px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
 }
 
 .screenshots h2 {
