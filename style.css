@@ -179,12 +179,20 @@ section img {
   margin: 4px;
 }
 
+.section__item {
+  transition: transform 0.1s ease-out 100ms;
+}
+
+.section__item:hover {
+  transform: translateX(-5px);
+}
+
 a:hover h3 {
   color: var(--accent);
 }
 
 a:hover h3::after {
-  content: ' »';
+  content: ' ›';
 }
 
 .feature-tags {
