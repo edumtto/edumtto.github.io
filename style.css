@@ -25,7 +25,7 @@ img, video {
 body {
   font-family: 'Helvetica', 'Tahoma', sans-serif;
   font-optical-sizing: auto;
-  font-size: medium;
+  font-weight: 200;
   /* animation: fadein 1s; */
 }
 
@@ -149,8 +149,6 @@ section {
 }
 
 .profile__tags li {
-  font-family: 'Garamond', sans-serif;
-  font-size: small;
   padding: 8px 4px 0px 0px;
   /* border-right: solid 1px black; */
   list-style-type: none;
