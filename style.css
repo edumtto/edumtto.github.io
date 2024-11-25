@@ -14,7 +14,8 @@ a:visited {
 
 hr {
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0;
+  border-bottom: solid 8px var(--profile);
 }
 
 img, video {
@@ -58,9 +59,36 @@ section {
   --profile: #4b7ac3;
 }
 
+.img-link img {
+  border: none;
+  box-shadow: none;
+}
+
+.img-link {
+  line-height: 0;
+}
+
+.links {
+  /* text-decoration: underline; */
+}
+
+.link:hover {
+  color: var(--accent);
+}
+
+.img-link:hover {
+  background: var(--accent);
+  border-radius: 8px;
+ }
+
+ .img-link:hover > img {
+  -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+  filter: invert(100%);
+ }
+
 /*---------- ANIMATIONS ----------*/
 
-.fadein-animation {
+/* .fadein-animation {
   animation: fadein 0.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
 }
 
@@ -99,7 +127,7 @@ section {
   100% {
     opacity: 100%;
   }
-}
+} */
 
 /*---------- PROFILE SECTION ----------*/
 
@@ -297,7 +325,7 @@ a:hover h3::after {
   align-items: center;
 }
 
-.project .links  img {
+.project .links img {
   border: none;
   box-shadow: none;
 }

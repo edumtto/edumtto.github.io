@@ -21,24 +21,40 @@
     gtag('config', 'G-DJ7P94DJB6');
   </script>
 
-  <!-- Dynamic colors -->
+  <!-- Color Theme -->
   <script>
-    function setThemeColor() {
+    function setNewThemeColor() {
       const themes = [
         { profile: "#14795b", accent: "#129446" }, // green
         { profile: "#73659b", accent: "#3a36c9" }, // purple
         { profile: "#4b7ac3", accent: "#0071e3" }, // blue
         { profile: "#cd5959", accent: "#c02626" } // red
       ]
+
       const theme = themes[Math.floor(Math.random()*themes.length)];
       
       var r = document.querySelector(':root');
       r.style.setProperty('--accent', theme.accent)
       r.style.setProperty('--profile', theme.profile)
+
+      localStorage.setItem("accent", theme.accent);
+      localStorage.setItem("profile", theme.profile);
+    }
+
+    function setStoredThemeColor(accentColor, profileColor) {
+      var r = document.querySelector(':root');
+      r.style.setProperty('--accent', accentColor)
+      r.style.setProperty('--profile', profileColor)
     }
 
     document.addEventListener('DOMContentLoaded', function() {
-      setThemeColor();
+      const accentColor = localStorage.getItem('accent')
+      const profileColor = localStorage.getItem('profile')
+      if (accentColor == undefined) {
+        setNewThemeColor();
+      } else {
+        setStoredThemeColor(accentColor, profileColor)
+      }
     });
    
   </script>
@@ -49,7 +65,7 @@
   <main>
 
     <header>
-      <div id="profile">
+      <div id="profile" onclick="setNewThemeColor()">
         <img src="img/profile-picture-5.png" alt="profile picture">
   
         <div id="profile__info">
@@ -178,8 +194,6 @@
         <li>🐧 Linux and Open Source</li>
       </ul>
     </section>
-    
-    <!-- <hr /> -->
 
     <section>
       <h2>Contact</h2>
@@ -205,6 +219,7 @@
       </ul>
     </section>
   </main>
+  <hr />
 </body>
 
 </html>

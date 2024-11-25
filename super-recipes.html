@@ -8,6 +8,18 @@
   <link rel="stylesheet" type="text/css" href="normalize.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://kit.fontawesome.com/0e1eac6e44.js" crossorigin="anonymous"></script>
+
+  <!-- Color Theme -->
+  <script>
+    function setThemeColor() {
+      var r = document.querySelector(':root');
+      r.style.setProperty('--accent', localStorage.getItem('accent'))
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      setThemeColor();
+    });
+  </script>
 </head>
 
 <body>

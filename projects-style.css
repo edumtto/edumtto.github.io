@@ -33,7 +33,7 @@ img, video {
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Arimo', sans-serif;
   font-optical-sizing: auto;
   font-size: medium;
 }
@@ -99,18 +99,32 @@ header .row-container {
   margin-right: auto;
 }
 
-main .links  img {
+.img-link img {
   border: none;
   box-shadow: none;
 }
 
-main .links a {
-  text-decoration: underline;
+.img-link {
+  line-height: 0;
 }
 
-main .links a:hover {
+.links {
+  /* text-decoration: underline; */
+}
+
+.link:hover {
   color: var(--accent);
 }
+
+.img-link:hover {
+  background: var(--accent);
+  border-radius: 8px;
+ }
+
+ .img-link:hover > img {
+  -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+  filter: invert(100%);
+ }
 
 .screenshots {
   display: flex;
