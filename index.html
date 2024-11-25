@@ -7,46 +7,57 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Source+Sans+3:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="normalize.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://kit.fontawesome.com/0e1eac6e44.js" crossorigin="anonymous"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJ7P94DJB6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DJ7P94DJB6');
+  </script>
+
+  <!-- Dynamic colors -->
+  <script>
+    function updateProfileColor() {
+      const profileColors = ["#14795b", "#73659b", "#4b7ac3", "#cd5959"]
+      const profile = document.getElementById("profile");
+      profile.style.backgroundColor = profileColors[Math.floor(Math.random()*profileColors.length)];
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      updateProfileColor();
+    });
+   
+  </script>
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DJ7P94DJB6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DJ7P94DJB6');
-</script>
 
 <body>
 
   <main>
 
     <header>
-      <div class="profile">
+      <div id="profile">
         <img src="img/profile-picture-5.png" alt="profile picture">
   
-          <div class="profile__info">
-            <h1><span>Eduardo Motta de Oliveira</span></h1>
-            <h2>Software Developer</h2>
-            <p>Sacramento, CA</p>
-
-            
-          </div>
+        <div id="profile__info">
+          <h1><span>Eduardo Motta de Oliveira</span></h1>
+          <h2>Software Developer</h2>
+          <p>Sacramento, CA</p>
+        </div>
       </div>
 
-      <ul class="profile__tags">
-        <li>B.S. Computer Science •</li>
-        <li>A.S. Computer Networking •</li>
-        <li>6 years of iOS Development experience •</li>
-        <li>Inspired by Science and Technology •</li>
+      <ul id="profile__tags">
+        <li>B.S. Computer Science</li>
+        <li>A.S. Computer Networking</li>
+        <li>6 years of iOS Development experience</li>
+        <li>Inspired by Science and Technology</li>
         <li>Passionated about Product Development</li>
       </ul>
-
     </header>
 
     <section>
