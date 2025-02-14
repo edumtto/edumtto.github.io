@@ -88,6 +88,8 @@ h1, h2, h3 {
 #header {
   padding-top: 10rem;
   background: linear-gradient(160deg, #fff8f0 0%, #fff 100%);
+  /* background: url(img/header-pattern.jpg); */
+  background-repeat: repeat;
   min-height: 100vh;
   display: flex;
   align-items: center;
