@@ -53,7 +53,7 @@ nav ul {
   list-style: none;
   gap: 3rem;
   float: right;
-  padding-right: 1.5rem;
+  /* padding-right: 1.5rem; */
 }
 
 nav a {
@@ -62,12 +62,19 @@ nav a {
   font-weight: 500;
   font-size: 0.9rem;
   letter-spacing: -0.01em;
+  line-height: 1;
   transition: color 0.3s;
 }
 
 nav a:hover {
   color: orange;
 }
+
+.nav-container{
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
 
 /* Sections */
 section {
@@ -100,8 +107,8 @@ h1, h2, h3 {
 
 .header-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 0rem;
   align-items: center;
   padding: 4rem 4rem 0rem 4rem;
   border-radius: 8px;
@@ -109,6 +116,8 @@ h1, h2, h3 {
 }
 
 .header-text {
+  display: grid;
+  grid-template-rows: auto;
   animation: fadeUp 1s ease-out 0.3s forwards;
   opacity: 0;
 }
@@ -117,23 +126,30 @@ h1, h2, h3 {
   font-size: 4rem;
   line-height: 1.1;
   margin-bottom: 1.5rem;
+  color:#6e6e73
+}
+
+.header-text strong {
+  /* font-size: 4rem; */
+  /* line-height: 1.1; */
+  /* margin-bottom: 1.5rem; */
   background: linear-gradient(120deg, #ff8c00, #ff4500);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
 }
 
 .header-text p {
   font-size: 1.25rem;
   color: #6e6e73;
   max-width: 85%;
+  padding-bottom: 4rem;
 }
 
 .profile-image {
   width: 100%;
-  max-width: 500px;
+  /* max-width: 500px; */
   height: auto;
-  border-radius: 4px;
+  align-self: baseline;
   /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
   /* animation: fade 1s ease-out 1s forwards; */
   opacity: 1;
@@ -193,7 +209,7 @@ h1, h2, h3 {
   justify-content: center;
   color: white;
   font-size: 1.5rem;
-  box-shadow: 0 10px 20px rgba(255,140,0,0.2);
+  /* box-shadow: 0 10px 20px rgba(255,140,0,0.2); */
 }
 
 /* Projects */
@@ -342,11 +358,16 @@ footer {
   .header-content,
   .about-content {
       grid-template-columns: 1fr;
-      gap: 2rem;
+      padding: 2rem 2rem 0rem 2rem;
   }
 
   .header-text h1 {
       font-size: 3rem;
+  }
+
+  .header-text p {
+    padding-bottom: 3rem;
+    max-width: 100%;
   }
 
   .profile-image {
