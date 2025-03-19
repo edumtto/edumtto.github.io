@@ -236,12 +236,12 @@ section img {
 }
 
 .section__item:hover > .section__item__text {
-  transform: translateX(10px);
+  transform: translateX(4px);
 }
 
-.section__item:hover > img {
-  transform: scale(1.3);
-}
+/* .section__item:hover > img {
+  transform: translateX(4px);
+} */
 
 a:hover h3 {
   color: var(--accent);
