@@ -344,8 +344,9 @@ footer {
   background: #1d1d1f;
   color: #f5f5f7;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   font-size: 0.9rem;
+  margin-top: 1rem;
 }
 
 /* Responsive Design */
@@ -430,7 +431,6 @@ footer {
   background: linear-gradient(120deg, #ff8c00, #ff4500);
   color: white;
   padding: 8rem 2rem 4rem;
-  margin-bottom: 4rem;
 }
 
 .project-header-content {
@@ -499,7 +499,7 @@ footer {
   font-size: 1.25rem;
   line-height: 1.8;
   color: #666;
-  max-width: 800px;
+  /* max-width: 800px; */
   margin: 0 auto;
 }
 
@@ -549,6 +549,8 @@ footer {
   align-items: center;
   margin: 6rem 0;
   padding: 0 32px;
+  max-width: 768px;
+  margin: auto;
 }
 
 .feature-item:nth-child(even) {
@@ -642,13 +644,6 @@ footer {
   .gallery-grid {
     padding: 0 16px;
   }
-
-  /* .project-overview h2,
-  .project-tech h2,
-  .project-features h2,
-  .project-gallery h2 {
-    padding: 0 16px;
-  } */
 
   .project-header-content {
     flex-direction: column;
