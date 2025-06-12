@@ -95,7 +95,7 @@ nav a:hover {
 
 /* Header */
 
-header {
+#hero {
   height: 100vh;
   width: 100vw;
   background-color: white;
@@ -174,7 +174,7 @@ header {
 
 #about {
   background: #f8f5f5;
-  padding: 4rem 2rem 0rem 2rem;
+  
 }
 
 .about-content {
@@ -184,13 +184,18 @@ header {
   /* align-items: center; */
 }
 
-.about-text h2 {
+/* Section Headers */
+.section-title {
   font-size: 2.5rem;
   /* font-weight: normal; */
   margin-bottom: 2rem;
   background: linear-gradient(120deg, #ff8c00, #ff4500);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.section-padding {
+  padding: 4rem 2rem 0rem 2rem;
 }
 
 .about-text {
@@ -222,17 +227,8 @@ header {
 #projects {
   /* background-color: white; */
   background: linear-gradient(180deg, #ffffff 0%, #f8f5f5 10%);
-  padding: 4rem 2rem;
 }
 
-#projects h2 {
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  /* text-align: center; */
-  background: linear-gradient(120deg, #ff8c00, #ff4500);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .projects-grid {
   display: grid;
@@ -309,15 +305,6 @@ header {
   /* background: hsl(0, 0%, 100%); */
   text-align: center;
   padding: 8rem 2rem;
-}
-
-#contact h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  /* font-weight: normal; */
-  background: linear-gradient(120deg, #ff8c00, #ff4500);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 #contact p {
@@ -447,10 +434,12 @@ footer {
 }
 
 .project-header-content {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  display: flex;
   gap: 2rem;
   align-items: center;
+  max-width: 1200px;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .project-header-text h1 {
@@ -503,7 +492,7 @@ footer {
 
 /* Project Overview */
 .project-overview {
-  padding: 4rem 2rem;
+  padding: 4rem 32px;
 }
 
 .project-description {
@@ -520,6 +509,7 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
+  padding: 0 32px;
 }
 
 .tech-item {
@@ -558,6 +548,7 @@ footer {
   gap: 4rem;
   align-items: center;
   margin: 6rem 0;
+  padding: 0 32px;
 }
 
 .feature-item:nth-child(even) {
@@ -592,6 +583,7 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
+  padding: 0 32px;
 }
 
 .gallery-item img {
@@ -643,9 +635,23 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .project-header,
+  .project-overview,
+  .tech-grid,
+  .feature-item,
+  .gallery-grid {
+    padding: 0 16px;
+  }
+
+  /* .project-overview h2,
+  .project-tech h2,
+  .project-features h2,
+  .project-gallery h2 {
+    padding: 0 16px;
+  } */
+
   .project-header-content {
-    grid-template-columns: 1fr;
-    text-align: center;
+    flex-direction: column;
   }
 
   .project-header-text h1 {
