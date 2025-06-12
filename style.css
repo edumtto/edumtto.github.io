@@ -437,3 +437,235 @@ footer {
 .scroll-reveal-item:nth-child(4) { transition-delay: 0.4s; }
 .scroll-reveal-item:nth-child(5) { transition-delay: 0.5s; }
 .scroll-reveal-item:nth-child(6) { transition-delay: 0.6s; }
+
+/* Project Page Styles */
+.project-header {
+  background: linear-gradient(120deg, #ff8c00, #ff4500);
+  color: white;
+  padding: 8rem 2rem 4rem;
+  margin-bottom: 4rem;
+}
+
+.project-header-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.project-header-text h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.project-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.project-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.app-store-link img {
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.app-store-link:hover img {
+  transform: translateY(-2px);
+}
+
+.website-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.website-link:hover {
+  background: white;
+  color: #ff4500;
+}
+
+.project-icon {
+  width: 200px;
+  height: 200px;
+  border-radius: 40px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* Project Overview */
+.project-overview {
+  padding: 4rem 2rem;
+}
+
+.project-description {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Technologies Grid */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.tech-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tech-item:hover {
+  transform: translateY(-5px);
+}
+
+.tech-item i {
+  font-size: 2.5rem;
+  color: #ff4500;
+  margin-bottom: 1rem;
+}
+
+.tech-item h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.tech-item p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Feature Items */
+.feature-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin: 6rem 0;
+}
+
+.feature-item:nth-child(even) {
+  direction: rtl;
+}
+
+.feature-item:nth-child(even) .feature-content {
+  direction: ltr;
+}
+
+.feature-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.feature-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+}
+
+.feature-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.02);
+}
+
+/* Scroll Reveal Animations */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.scroll-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-reveal-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.scroll-reveal.active .scroll-reveal-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animation for tech items */
+.tech-item:nth-child(1) { transition-delay: 0.1s; }
+.tech-item:nth-child(2) { transition-delay: 0.2s; }
+.tech-item:nth-child(3) { transition-delay: 0.3s; }
+.tech-item:nth-child(4) { transition-delay: 0.4s; }
+.tech-item:nth-child(5) { transition-delay: 0.5s; }
+.tech-item:nth-child(6) { transition-delay: 0.6s; }
+
+/* Staggered animation for gallery items */
+.gallery-item:nth-child(1) { transition-delay: 0.1s; }
+.gallery-item:nth-child(2) { transition-delay: 0.2s; }
+.gallery-item:nth-child(3) { transition-delay: 0.3s; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-header-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .project-header-text h1 {
+    font-size: 3rem;
+  }
+
+  .project-links {
+    justify-content: center;
+  }
+
+  .feature-item {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .feature-item:nth-child(even) {
+    direction: ltr;
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+}

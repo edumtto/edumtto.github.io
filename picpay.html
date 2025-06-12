@@ -1,139 +1,175 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html lang="en">
 
 <head>
-  <title>Eduardo Oliveira - Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Source+Sans+3:ital@0;1&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PicPay - Eduardo Oliveira</title>
   <link rel="stylesheet" type="text/css" href="normalize.css">
-  <link rel="stylesheet" type="text/css" href="projects-style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://kit.fontawesome.com/0e1eac6e44.js" crossorigin="anonymous"></script>
-  <script src="setTheme.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <main>
-
-    <header>
-      <div class="row-container">
-        <img src="img/picpay-icon.jpg" class="icon" alt="app icon">
-        <h1>PicPay</h1>
-      </div>
-      <p>Payment App, Credit and Debit Card Manager, Investment Tools</p>
-    </header>
-    
-    <div class="description">
-      <p>
-        PicPay, a widely-used digital wallet app in Brazil, was designed with millions of users in mind. 
-        Its primary focus is to provide convenience, user-friendliness, accessibility, and robust security, making it a trusted platform for everyday transactions and payments. 
-        To bring about large-scale features, I utilized the following technologies:
-      </p>
+  <nav>
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">
+        <strong>e</strong>-oliveira
+      </a>
       <ul>
-        <li><b>UIKit</b> and programmatic layout for designing interfaces.</li>
-        <li><b>MVVM</b>, Coordinator, and Modular architecture for flexibility and
-          scalability.</li>
-        <li><b>Keychain</b> for securely storing sensitive data.</li>
-        <li><b>Push notifications</b> for real-time updates and engagement.</li>
-        <li><b>Camera integration</b> for scanning QR Codes and Bar Codes.</li>
-        <li><b>Dispatch queues</b> handling asynchronous flow and ensuring optimal performance.</li>
-        <li><b>REST API</b> connections to facilitate communication with external services.</li>
-        <li><b>Analytics</b> tools for monitoring usage and gathering insights.</li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </div>
+  </nav>
 
-    <section class="screenshots">
-
-      <h2>Screenshots</h2>
-
-        <div class="screenshots__item">
-          <a href="img/screenshots/picpay.png">
-            <img src="img/screenshots-sm/picpay.png" alt="screenshot 1">
-          </a>
-          <div class="screenshots__item__text">
-            <h3>Home screen</h3>
-            <p>
-              I developed a dynamic banner system for quick and convenient remote configuration. I also enhanced the suggestion 
-              list and implemented additional elements within the scroll view using the Texture framework, prioritizing performance.
-            </p>
+  <main>
+    <header class="project-header">
+      <div class="container scroll-reveal">
+        <div class="project-header-content">
+          <div class="project-header-text">
+            <h1>PicPay</h1>
+            <p class="project-subtitle">Payment App, Credit and Debit Card Manager, Investment Tools</p>
+            <div class="project-links">
+              <a href="https://www.picpay.com/" target="_blank" class="website-link">
+                Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              <a href="https://apps.apple.com/br/app/picpay-conta-pix-e-cart%C3%A3o/id561524792" target="_blank" class="app-store-link">
+                Download on App Store
+              </a>
             </div>
-        </div>
-
-        <div class="screenshots__item text-align-right">
-          <div class="screenshots__item__text">
-            <h3>Wallet</h3>
-            <p> I played a role in redesigning the entire wallet feature, 
-              ensuring accessibility for screen readers. This included implementing a credit/debit card manager for seamless management. </p>
           </div>
-          <a href="img/screenshots/picpay2.png">
-            <img src="img/screenshots-sm/picpay2.png" alt="screenshot 2">
-          </a>
-
+          <div class="project-header-image">
+            <img src="img/picpay-icon.jpg" alt="PicPay App Icon" class="project-icon">
+          </div>
         </div>
+      </div>
+    </header>
+
+    <section class="project-overview">
+      <div class="container scroll-reveal">
+        <h2>Project Overview</h2>
+        <p class="project-description">
+          PicPay, a widely-used digital wallet app in Brazil, was designed with millions of users in mind. 
+          Its primary focus is to provide convenience, user-friendliness, accessibility, and robust security, 
+          making it a trusted platform for everyday transactions and payments.
+        </p>
+      </div>
+    </section>
+
+    <section class="project-tech">
+      <div class="container scroll-reveal">
+        <h2>Technologies Used</h2>
+        <div class="tech-grid">
+          <div class="tech-item scroll-reveal-item">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <h3>UIKit</h3>
+            <p>Programmatic layout for designing interfaces</p>
+          </div>
+          <div class="tech-item scroll-reveal-item">
+            <i class="fa-solid fa-sitemap"></i>
+            <h3>Architecture</h3>
+            <p>MVVM, Coordinator, and Modular architecture</p>
+          </div>
+          <div class="tech-item scroll-reveal-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Security</h3>
+            <p>Keychain for secure data storage</p>
+          </div>
+          <div class="tech-item scroll-reveal-item">
+            <i class="fa-solid fa-bell"></i>
+            <h3>Notifications</h3>
+            <p>Push notifications for real-time updates</p>
+          </div>
+          <div class="tech-item scroll-reveal-item">
+            <i class="fa-solid fa-camera"></i>
+            <h3>Camera</h3>
+            <p>QR Code and Bar Code scanning</p>
+          </div>
+          <div class="tech-item scroll-reveal-item">
+            <i class="fa-solid fa-code-branch"></i>
+            <h3>Performance</h3>
+            <p>Dispatch queues for async operations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-features">
+      <div class="container">
+        <h2 class="scroll-reveal">Key Features</h2>
         
-        <!-- <a href="img/screenshots/picpay3.png">
-          <img src="img/screenshots-sm/picpay3.png" alt="screenshot 3">
-        </a> -->
-
-        <div class="screenshots__item">
-            <a href="img/screenshots/picpay4.png">
-              <img src="img/screenshots-sm/picpay4.png" alt="screenshot 4">
-            </a>
-            <a href="img/screenshots/picpay5.png">
-              <img src="img/screenshots-sm/picpay5.png" alt="screenshot 5">
-            </a>
-          <div class="screenshots__item__text">
-            <h3>Savings</h3>
-            <p> At PicPay, I contributed to the creation of a flexible savings account that allows users to organize their savings using virtual Piggy Banks.
-               I was involved in the project from its inception, including design research and refinement.</p>
+        <div class="feature-item scroll-reveal">
+          <div class="feature-content">
+            <h3>Home Screen</h3>
+            <p>Developed a dynamic banner system for quick and convenient remote configuration. Enhanced the suggestion 
+              list and implemented additional elements within the scroll view using the Texture framework, prioritizing performance.</p>
+          </div>
+          <div class="feature-image">
+            <img src="img/screenshots//picpay.png" alt="Home Screen">
           </div>
         </div>
 
-        <div class="screenshots__item text-align-right">
-          <div class="screenshots__item__text">
-            <h3>Statement</h3>
-            <p> Together with my team, I built a simplified statement screen that unified all transactions from different microservices within the app. This provided users with a comprehensive overview of their activities.</p>
+        <div class="feature-item scroll-reveal">
+          <div class="feature-content">
+            <h3>Wallet Management</h3>
+            <p>Redesigned the entire wallet feature, ensuring accessibility for screen readers. Implemented a credit/debit card manager 
+              for seamless management of payment methods.</p>
           </div>
-          <a href="img/screenshots/picpay9.png">
-            <img src="img/screenshots-sm/picpay9.png" alt="screenshot 9">
-          </a>
-        </div>
-        
-        <div class="screenshots__item">
-          <a href="img/screenshots/picpay6.png">
-            <img src="img/screenshots-sm/picpay6.png" alt="screenshot 6">
-          </a>
-          <a href="img/screenshots/picpay7.png">
-            <img src="img/screenshots-sm/picpay7.png" alt="screenshot 7">
-          </a>
-          <a href="img/screenshots/picpay8.png">
-            <img src="img/screenshots-sm/picpay8.png" alt="screenshot 8">
-          </a>
-
-          <div class="screenshots__item__text">
-            <h3>Other features</h3>
-            <p>Together with my team, I built a simplified statement screen that unified all transactions from different microservices within the app. 
-              This provided users with a comprehensive overview of their activities.</p>
+          <div class="feature-image">
+            <img src="img/screenshots//picpay2.png" alt="Wallet Screen">
           </div>
         </div>
-      </section>
 
-      <section>
-        <div class="row-container links">
-          <a href="https://apps.apple.com/br/app/picpay-conta-pix-e-cart%C3%A3o/id561524792" class="img-link" target="_blank">
-            <img src="img/badge-appstore.png" alt="app store badge">
-          </a>
-          <a href="https://www.picpay.com/" class="link" target="_blank">
-            Website<span class="fa-solid fa-link"></span>
-          </a>
-    
-          <a href="https://investor.picpay.com/company-info/our-products/" class="link" target="_blank">
-            English page <span class="fa-solid fa-link"></span>
-          </a>
+        <div class="feature-item scroll-reveal">
+          <div class="feature-content">
+            <h3>Savings Account</h3>
+            <p>Created a flexible savings account that allows users to organize their savings using virtual Piggy Banks. 
+              Involved in the project from inception, including design research and refinement.</p>
+          </div>
+          <div class="feature-image">
+            <img src="img/screenshots//picpay4.png" alt="Savings Screen">
+          </div>
         </div>
-      </section>
 
+        <div class="feature-item scroll-reveal">
+          <div class="feature-content">
+            <h3>Transaction Statement</h3>
+            <p>Built a simplified statement screen that unified all transactions from different microservices within the app, 
+              providing users with a comprehensive overview of their activities.</p>
+          </div>
+          <div class="feature-image">
+            <img src="img/screenshots//picpay9.png" alt="Statement Screen">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-gallery">
+      <div class="container scroll-reveal">
+        <h2>Additional Screenshots</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item scroll-reveal-item">
+            <img src="img/screenshots//picpay6.png" alt="Feature Screenshot">
+          </div>
+          <div class="gallery-item scroll-reveal-item">
+            <img src="img/screenshots//picpay7.png" alt="Feature Screenshot">
+          </div>
+          <div class="gallery-item scroll-reveal-item">
+            <img src="img/screenshots//picpay8.png" alt="Feature Screenshot">
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-</body>
 
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Eduardo Oliveira. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
 </html>
