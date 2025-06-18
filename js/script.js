@@ -24,10 +24,26 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
+// Hide scroll indicator when user scrolls
+// let scrollIndicatorHidden = false;
+// const scrollIndicator = document.querySelector('.scroll-indicator');
+
+// function hideScrollIndicator() {
+//     if (!scrollIndicatorHidden && scrollIndicator) {
+//         scrollIndicator.style.opacity = '0';
+//         scrollIndicator.style.transform = 'translateX(-50%) translateY(20px)';
+//         scrollIndicator.style.transition = 'all 0.5s ease';
+//         scrollIndicatorHidden = true;
+//     }
+// }
+
 // Observe all elements with the scroll-reveal class
 document.addEventListener('DOMContentLoaded', () => {
     const scrollElements = document.querySelectorAll('.scroll-reveal');
     scrollElements.forEach(element => {
         observer.observe(element);
     });
+    
+    // Add scroll event listener
+    // window.addEventListener('scroll', hideScrollIndicator);
 });

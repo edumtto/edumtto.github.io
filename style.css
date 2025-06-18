@@ -110,6 +110,10 @@ nav a:hover {
   background: white;
 }
 
+.header-text strong {
+  white-space: nowrap;
+}
+
 .header-text h1 {
   font-size: 4rem;
   font-weight: normal;
@@ -216,11 +220,12 @@ nav a:hover {
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.2s;
+  justify-content: space-around;
 }
 
 .about-image img {
   width: 100%;
-  /* height: auto; */
+  max-width: 430px;
 }
 
 /* Projects */
@@ -669,11 +674,6 @@ footer {
 @media (max-width: 600px) {
   .contact-links {
       gap: 0.8rem;
-  }
-
-  .skills-list {
-    flex-direction: column;
-    gap: 0.4rem;
   }
 }
 
