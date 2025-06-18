@@ -25,17 +25,17 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Hide scroll indicator when user scrolls
-// let scrollIndicatorHidden = false;
-// const scrollIndicator = document.querySelector('.scroll-indicator');
+let scrollIndicatorHidden = false;
+const scrollIndicator = document.querySelector('.scroll-indicator');
 
-// function hideScrollIndicator() {
-//     if (!scrollIndicatorHidden && scrollIndicator) {
-//         scrollIndicator.style.opacity = '0';
-//         scrollIndicator.style.transform = 'translateX(-50%) translateY(20px)';
-//         scrollIndicator.style.transition = 'all 0.5s ease';
-//         scrollIndicatorHidden = true;
-//     }
-// }
+function hideScrollIndicator() {
+    if (!scrollIndicatorHidden && scrollIndicator) {
+        scrollIndicator.style.opacity = '0';
+        scrollIndicator.style.transform = 'translateX(-50%) translateY(20px)';
+        scrollIndicator.style.transition = 'all 0.5s ease';
+        scrollIndicatorHidden = true;
+    }
+}
 
 // Observe all elements with the scroll-reveal class
 document.addEventListener('DOMContentLoaded', () => {
@@ -45,5 +45,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     // Add scroll event listener
-    // window.addEventListener('scroll', hideScrollIndicator);
+    window.addEventListener('scroll', hideScrollIndicator);
+    
+    // Add click functionality to scroll indicator
+    if (scrollIndicator) {
+        scrollIndicator.addEventListener('click', () => {
+            const aboutSection = document.querySelector('#about');
+            if (aboutSection) {
+                aboutSection.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    }
 });
