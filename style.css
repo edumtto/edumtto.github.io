@@ -242,16 +242,19 @@ nav a:hover {
   background: white;
   border-radius: 20px;
   padding: 2rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+  /* transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); */
   cursor: pointer;
   opacity: 0;
-  animation: scaleIn 0.5s ease-out forwards;
+  border: solid 1px #f8f5f5;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  border-color: #ff8c00;
+}
+
+.project-card:hover h3 {
+  color: #ff8c00;
 }
 
 .project-card-header {
@@ -267,10 +270,6 @@ nav a:hover {
   border-radius: 0.5rem;
   object-fit: cover;
   transition: transform 0.4s ease;
-}
-
-.project-card:hover .project-image {
-  transform: scale(1.05);
 }
 
 .project-content {

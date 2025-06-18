@@ -9,6 +9,15 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('active');
+            
+            // Remove transition delays after animation completes
+            setTimeout(() => {
+                const animatedItems = entry.target.querySelectorAll('.scroll-reveal-item');
+                animatedItems.forEach(item => {
+                    item.style.transitionDelay = '0s';
+                });
+            }, 1000); // Wait for all animations to complete
+            
             // Once the animation is triggered, we can stop observing
             observer.unobserve(entry.target);
         }
