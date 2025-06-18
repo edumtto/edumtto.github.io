@@ -101,7 +101,7 @@ nav a:hover {
   background-color: white;
   display: flex;
   align-items: center;
-  padding: 2rem 2rem;
+  padding: 4rem;
   position: relative;
 }
 
@@ -109,10 +109,6 @@ nav a:hover {
   align-items: center;
   margin: auto;
   background: white;
-}
-
-.header-text strong {
-  white-space: nowrap;
 }
 
 .header-text h1 {
@@ -201,7 +197,7 @@ nav a:hover {
 }
 
 .section-padding {
-  padding: 4rem 2rem 0rem 2rem;
+  padding: 4rem 4rem 0rem 4rem;
 }
 
 .about-text {
@@ -681,8 +677,14 @@ footer {
       gap: 1.5rem;
   }
 
-  /* .project-header,
-  .project-overview, */
+  #hero {
+    padding: 3rem;
+  }
+
+  .section-padding {
+    padding: 4rem 3rem 0rem 3rem;
+  }
+
   .tech-grid,
   .feature-item,
   .gallery-grid {
@@ -717,16 +719,12 @@ footer {
   
   /* Mobile scroll indicator adjustments */
   .scroll-indicator {
-    bottom: 1.5rem;
+    bottom: 3rem;
   }
   
   .chevron-icon {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .scroll-text {
-    font-size: 0.8rem;
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -737,7 +735,14 @@ footer {
 }
 
 @media (max-width: 480px) {
-.contact-links {
+  #hero {
+    padding: 2rem;
+  }
+  .contact-links {
       flex-direction: column;
+  }
+
+  .section-padding {
+    padding: 4rem 2rem 0rem 2rem;
   }
 }
