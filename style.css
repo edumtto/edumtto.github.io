@@ -5,6 +5,12 @@
   scroll-behavior: smooth;
 }
 
+:root {
+    --branding-color: #ff8c00; 
+    --branding-gradient: linear-gradient(120deg, #ff8c00, #ff4500);
+    --success-color: #28a745; 
+  }
+
 @keyframes fadeUp {
   from {
       opacity: 0;
@@ -31,7 +37,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   line-height: 1.6;
   color: #1d1d1f;
-  background-color: #f8f5f5;
+  background-color: #fff;
 }
 
 .container {
@@ -53,13 +59,13 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  box-shadow: 0 0.5px 1px rgba(127, 127, 127, 0.2);
+  box-shadow: 0 0.5px 2px rgba(127, 127, 127, 0.5);
   z-index: 1000;
 }
 
 .nav-logo {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #1d1d1f;
 }
 
@@ -76,7 +82,7 @@ nav a {
   text-decoration: none;
   color: #1d1d1f;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   letter-spacing: -0.01em;
   line-height: 1;
   transition: color 0.3s;
@@ -176,7 +182,7 @@ nav a:hover {
 
 #about {
   background: #f8f5f5;
-  
+  /* background: #fff; */
 }
 
 .about-content {
@@ -228,7 +234,9 @@ nav a:hover {
 /* Projects */
 
 #projects {
-  /* background-color: white; */
+  background-color: #f5f7f8;
+  margin-top: 1rem;
+  padding-bottom: 6rem;
   background: linear-gradient(180deg, #ffffff 0%, #f8f5f5 10%);
 }
 
@@ -236,23 +244,25 @@ nav a:hover {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 3rem;
-  margin-top: 2rem;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .project-card {
   background: white;
   border-radius: 20px;
-  padding: 2rem;
-  box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  /* box-shadow: 0 1px 1px rgba(0,0,0,0.5); */
+  /* box-shadow: 0 0.5px 2px rgba(127, 127, 127, 0.5); */
   /* transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); */
   cursor: pointer;
   opacity: 0;
-  border: solid 1px #f8f5f5;
+  border: solid 1px #e3e4e400;
 }
 
 .project-card:hover {
-  border-color: #ff8c00;
+  /* box-shadow: 1px 1px 3px rgba(127, 127, 127, 0.5); */
+  border: solid 1px #ff8c00;
 }
 
 .project-card:hover h3 {
@@ -279,34 +289,35 @@ nav a:hover {
 }
 
 .project-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   /* margin-bottom: 1rem; */
 }
 
 .project-labels {
   display: flex;
   gap: 0.75rem;
-  margin: 1rem 0;
+  margin: 0.8rem 0 0 0;
   flex-wrap: wrap;
 }
 
 .label {
   /* background: linear-gradient(120deg, #ff8c00, #ff4500); */
   /* background: linear-gradient(120deg, #ff8c00, #ffffff); */
-  color: #ff8c00;
-  border: solid 1px  #ff8c00;
+  color: #434f69;
+  border: solid 0.5px  #434f69;
   padding: 0.1rem 0.6rem;
   border-radius: 20px;
-  font-size: 0.875rem;
-  font-weight: 500;
+  font-size: 0.8rem;
+  font-weight: 400;
   /* box-shadow: 0 5px 10px rgba(255,140,0,0.15); */
 }
 
 /* Contact */
 #contact {
-  /* background: hsl(0, 0%, 100%); */
+  background: #fff;
   text-align: center;
   padding: 8rem 2rem;
+  margin-top: 1rem;
 }
 
 #contact p {
@@ -326,29 +337,32 @@ nav a:hover {
   color: #1d1d1f;
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   transition: all 0.3s;
-  padding: 1rem 2rem;
+  padding: 0.3rem 1rem;
   border-radius: 30px;
-  background-color: white;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border: 1px solid #6e6e73;
+  /* background-color: white; */
+  /* box-shadow: 0 5px 15px rgba(0,0,0,0.05); */
 }
 
 .contact-links a:hover {
-  background: linear-gradient(120deg, #ff8c00, #ff4500);
-  color: white;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(255,140,0,0.2);
+  /* background: linear-gradient(120deg, #ff8c00, #ff4500); */
+  /* color: white; */
+  transform: translateY(-2px);
+  /* box-shadow: 0 10px 20px rgba(255,140,0,0.2); */
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
 }
 
 /* Footer */
 footer {
-  background: #1d1d1f;
-  color: #f5f5f7;
+  color: #1d1d1f;
+  background: #fff;
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  margin-top: 1rem;
+  padding: 0.2rem;
+  font-size: 0.8rem;
+  /* margin-top: 1rem; */
 }
 
 /* Scroll Reveal Animation */
