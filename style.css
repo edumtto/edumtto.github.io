@@ -77,10 +77,10 @@ nav a {
   color: #1d1d1f;
   font-weight: 500;
   font-size: 1rem;
-  letter-spacing: -0.01em;
-  line-height: 1;
-  transition: color 0.3s;
-  vertical-align: middle;
+  /* letter-spacing: -0.01em; */
+  /* line-height: 1; */
+  /* transition: color 0.3s; */
+  /* vertical-align: middle; */
 }
 
 nav a:hover {
@@ -170,7 +170,7 @@ nav a:hover {
 /* About */
 
 #about {
-  background: #f8f5f5;
+  background: #f5f7f8;
   /* background: #fff; */
 }
 
@@ -223,10 +223,10 @@ nav a:hover {
 /* Projects */
 
 #projects {
-  background-color: #f5f7f8;
+  
   margin-top: 1rem;
   padding-bottom: 6rem;
-  background: linear-gradient(180deg, #ffffff 0%, #f8f5f5 10%);
+  
 }
 
 
@@ -235,28 +235,30 @@ nav a:hover {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .project-card {
-  background: white;
-  border-radius: 20px;
+  /* background: rgb(255, 255, 255); */
+  border-radius: 4px;
   padding: 1.5rem;
   /* box-shadow: 0 1px 1px rgba(0,0,0,0.5); */
   /* box-shadow: 0 0.5px 2px rgba(127, 127, 127, 0.5); */
   /* transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); */
   cursor: pointer;
   opacity: 0;
-  border: solid 1px #e3e4e400;
+  /* border: solid 1px #ff8c003d; */
 }
 
 .project-card:hover {
   /* box-shadow: 1px 1px 3px rgba(127, 127, 127, 0.5); */
-  border: solid 1px #ff8c00;
+  /* border: solid 1px #ff8c00; */
+  background-color: white;
 }
 
-.project-card:hover h3 {
+/* .project-card:hover h3 {
   color: #ff8c00;
-}
+} */
 
 .project-card-header {
   display: flex;
@@ -268,14 +270,11 @@ nav a:hover {
   width: 48px;
   /* width: 100%; */
   /* height: 250px; */
-  border-radius: 0.5rem;
+  border-radius: 4px;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
 
-.project-content {
-  /* padding: 2rem; */
-}
 
 .project-card h3 {
   font-size: 1.2rem;
@@ -285,17 +284,17 @@ nav a:hover {
 .project-labels {
   display: flex;
   gap: 0.75rem;
-  margin: 0.8rem 0 0 0;
+  margin: 0.2rem 0 0 0;
   flex-wrap: wrap;
 }
 
 .label {
   /* background: linear-gradient(120deg, #ff8c00, #ff4500); */
   /* background: linear-gradient(120deg, #ff8c00, #ffffff); */
-  color: #434f69;
-  border: solid 0.5px  #434f69;
-  padding: 0.1rem 0.6rem;
-  border-radius: 20px;
+  color: #767677;
+  /* border: solid 0.5px  #b2baca; */
+  /* padding: 0.1rem 0.6rem; */
+  /* border-radius: 4px; */
   font-size: 0.8rem;
   font-weight: 400;
   /* box-shadow: 0 5px 10px rgba(255,140,0,0.15); */
@@ -303,7 +302,8 @@ nav a:hover {
 
 /* Contact */
 #contact {
-  background: #fff;
+  background-color: #f5f7f8;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f5f5 10%);
   text-align: center;
   padding: 8rem 2rem;
   margin-top: 1rem;
@@ -329,7 +329,7 @@ nav a:hover {
   font-size: 1rem;
   transition: all 0.3s;
   padding: 0.3rem 1rem;
-  border-radius: 30px;
+  border-radius: 4px;
   border: 1px solid #6e6e73;
   /* background-color: white; */
   /* box-shadow: 0 5px 15px rgba(0,0,0,0.05); */
@@ -446,7 +446,7 @@ footer {
   text-decoration: none;
   padding: 0.5rem 1rem;
   border: 2px solid white;
-  border-radius: 30px;
+  border-radius: 4px;
   transition: all 0.3s ease;
 }
 
