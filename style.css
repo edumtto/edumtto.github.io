@@ -223,10 +223,8 @@ nav a:hover {
 /* Projects */
 
 #projects {
-  
   margin-top: 1rem;
   padding-bottom: 6rem;
-  
 }
 
 
@@ -247,13 +245,13 @@ nav a:hover {
   /* transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); */
   cursor: pointer;
   opacity: 0;
-  /* border: solid 1px #ff8c003d; */
+  border: solid 1px #ff8c0000;
 }
 
 .project-card:hover {
   /* box-shadow: 1px 1px 3px rgba(127, 127, 127, 0.5); */
-  /* border: solid 1px #ff8c00; */
-  background-color: white;
+  border: solid 1px #ff8c00;
+  /* background-color: #f0f0f0; */
 }
 
 /* .project-card:hover h3 {
