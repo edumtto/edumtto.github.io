@@ -264,12 +264,11 @@ nav a:hover {
   align-items: center;
 }
 
-.project-image {
+.project-icon {
   width: 48px;
-  /* width: 100%; */
-  /* height: 250px; */
-  border-radius: 4px;
   object-fit: cover;
+  mask-image: url(img/squircle.svg);
+  mask-size: cover;
   transition: transform 0.4s ease;
 }
 
@@ -457,16 +456,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.project-icon {
-  max-width: 240px;
-  max-height: 240px;
-  width: 80%;
-  height: 80%;
-  border-radius: 20%;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-  
 }
 
 /* Project Overview */
