@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study: Lumity Wrapped | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .placeholder-img {
+      background-color: #f3f4f6;
+      border: 2px dashed #d1d5db;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #9ca3af;
+      border-radius: 0.75rem;
+      min-height: 300px;
+      margin: 1.5rem 0;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+
+  <header class="bg-white border-b">
+    <div class="max-w-5xl mx-auto px-6 py-16">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+        Lumity Media: User Insights Report
+      </h1>
+      <p class="text-xl text-gray-600 max-w-3xl">
+        Designing and engineering a "Spotify Wrapped" style experience for a cross-platform multimedia ecosystem.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-8">
+        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">React.js</span>
+        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Node.js</span>
+        <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">Swift / UIKit</span>
+        <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Tailwind CSS</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-12">
+
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold mb-6">Project Overview</h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <p class="mb-4">
+            Lumity Media seeks to enhance user engagement by providing personalized insights based on content
+            consumption. I developed the <strong>"Lumity Wrapped"</strong> feature, which summarizes activities across
+            books, podcasts, and videos.
+          </p>
+          <p>
+            The project involved building the data aggregation engine, the visual frontend experience, and the native
+            mobile integration to ensure a cohesive user journey.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm border">
+          <h3 class="font-bold mb-3 text-gray-700 underline underline-offset-4">Key Responsibilities</h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-600">
+            <li>UI/UX Design in Figma</li>
+            <li>Full-stack Web Development</li>
+            <li>Native iOS Implementation</li>
+            <li>RESTful API Design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold mb-4">UI/UX Specification</h2>
+      <p class="text-gray-600 mb-6">The visual language focused on "data-storytelling"—turning raw numbers into
+        celebratory milestones.</p>
+
+      <div class="placeholder-img">
+        <div class="text-center p-4">
+          <p class="font-bold text-gray-500">[Insert Figma Screens Here]</p>
+          <p class="text-sm">Screens showing the Recap Story flow and Interest Cards</p>
+        </div>
+      </div>
+
+      <div class="mt-4 text-center">
+        <a href="https://www.figma.com/design/lCRkJlGvLDTDwq8g66zdYM/Lumity-Wrapped?node-id=1-17&p=f&t=DR6PJoEShpAXdyey-0"
+          target="_blank" class="text-blue-600 hover:underline font-medium">View Figma Design File &rarr;</a>
+      </div>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold mb-8 text-center text-gray-800 italic">"The Full Stack Implementation"</h2>
+
+      <div class="mb-12">
+        <h3 class="text-xl font-bold mb-3 text-blue-600">Web Implementation</h3>
+        <p class="text-gray-600 mb-4">Built with <strong>React.js</strong> and <strong>Vite</strong> for speed, styled
+          with <strong>Tailwind CSS</strong> for a modern, responsive feel. The app consumes the recap API to generate
+          dynamic charts and summaries.</p>
+
+        <div class="placeholder-img min-height-[200px]">
+          <p class="font-bold text-gray-500">[Screenshot of the React Web Application]</p>
+        </div>
+      </div>
+
+      <div class="mb-12">
+        <h3 class="text-xl font-bold mb-3 text-green-600">Backend & API</h3>
+        <p class="text-gray-600 mb-4">Developed a <strong>Node.js</strong> service that handles data aggregation. Two
+          critical endpoints were added to the existing codebase:</p>
+        <ul class="bg-gray-800 text-gray-300 p-6 rounded-lg font-mono text-sm space-y-2">
+          <li><span class="text-green-400">GET</span> /api/v1/recap-data <span class="text-gray-500">// Returns
+              processed user metrics</span></li>
+          <li><span class="text-green-400">GET</span> /year-recap <span class="text-gray-500">// Serves the React
+              frontend bundle</span></li>
+        </ul>
+      </div>
+
+      <div class="mb-12">
+        <h3 class="text-xl font-bold mb-3 text-orange-600">iOS Mobile Integration</h3>
+        <p class="text-gray-600 mb-4">Using <strong>Swift</strong> and <strong>UIKit</strong>, I integrated the feature
+          into the native app, allowing users to access their recap via a seamless web-view transition that feels native
+          to the Lumity environment.</p>
+
+        <div class="placeholder-img">
+          <p class="font-bold text-gray-500">[Insert iPhone Mockup / Screen Recording]</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-blue-600 text-white p-10 rounded-2xl mb-16 shadow-lg">
+      <h2 class="text-2xl font-bold mb-4">The Final Product</h2>
+      <p class="mb-6 opacity-90">The User Recap is live and accessible via the internal database, bridging the gap
+        between data and user appreciation.</p>
+      <div class="bg-blue-700 p-4 rounded-lg flex items-center justify-between overflow-hidden">
+        <code class="text-sm md:text-base">https://api.lummity.co/year-recap?userId=123</code>
+        <span class="text-xs uppercase tracking-widest bg-blue-500 px-2 py-1 rounded">Live Link</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-100 border-t py-12">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <p class="text-gray-500 mb-4">Project completed for Lumity Media Freelance Engagement.</p>
+      <div class="flex justify-center gap-6">
+        <a href="https://github.com/edumtto/social-recap" class="text-gray-700 hover:text-black font-semibold">GitHub
+          Repo</a>
+        <a href="#" class="text-gray-700 hover:text-black font-semibold">Back to Portfolio</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
