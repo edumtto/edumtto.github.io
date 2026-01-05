@@ -269,6 +269,8 @@ nav a:hover {
   object-fit: cover;
   mask-image: url(img/squircle.svg);
   mask-size: cover;
+  -webkit-mask-image: url(img/squircle.svg);
+  -webkit-mask-size: cover;
   transition: transform 0.4s ease;
 }
 
