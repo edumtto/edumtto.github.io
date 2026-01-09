@@ -6,184 +6,289 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" type="text/css" href="normalize.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'sans': ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif']
+          },
+          animation: {
+            'fade-up': 'fadeUp 0.6s ease-out forwards',
+            'float': 'float 6s ease-in-out infinite'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
 </head>
 
 <body>
-  <nav>
-    <div>
-      <ul>
-        <li><a href="#about">about</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#contact">contact</a></li>
+  <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-white/80 border-b border-gray-100">
+    <div class="max-w-4xl mx-auto flex justify-center py-3 px-4">
+      <ul class="flex gap-4 sm:gap-8 list-none">
+        <li><a href="#about" class="text-gray-700 font-medium text-xs sm:text-sm tracking-wide hover:text-orange-500 transition-all duration-300 hover:scale-105">About</a></li>
+        <li><a href="#projects" class="text-gray-700 font-medium text-xs sm:text-sm tracking-wide hover:text-orange-500 transition-all duration-300 hover:scale-105">Projects</a></li>
+        <li><a href="#contact" class="text-gray-700 font-medium text-xs sm:text-sm tracking-wide hover:text-orange-500 transition-all duration-300 hover:scale-105">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <header id="hero">
-    <div class="header-content">
-      <div class="header-text scroll-reveal">
-        <h1>Hi, I'm<br><strong>Eduardo Oliveira</strong></h1>
-        <p>iOS Developer & UX Enthusiast turning complexity into clean, intuitive experiences.</p>
-        <ul class="skills-list">
-          <li class="scroll-reveal-item">
-            <span class="skill-icon">📱</span>
-            <span>iOS</span>
-          </li>
-          <li class="scroll-reveal-item">
-            <span class="skill-icon">🌎</span>
-            <span>Web</span>
-          </li>
-
-          <li class="scroll-reveal-item">
-            <span class="skill-icon">🎨</span>
-            <span>UI/UX</span>
-          </li>
-        </ul>
+  <header id="hero" class="min-h-screen w-full bg-gradient-to-br from-gray-50 via-white to-orange-50 flex items-center justify-center px-4 sm:px-8 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,140,0,0.1),transparent_50%)] pointer-events-none"></div>
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <div class="animate-fade-up">
+        <h1 class="text-3xl sm:text-5xl md:text-7xl font-light leading-tight mb-6 sm:mb-8">
+          <span class="text-gray-800">Hi, I'm</span><br>
+          <span class="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent font-medium">Eduardo Oliveira</span>
+        </h1>
+        <p class="text-base sm:text-xl md:text-2xl text-gray-600 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed px-2">iOS Developer & UX Enthusiast turning complexity into clean, intuitive experiences.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-8 text-gray-500">
+          <div class="flex items-center gap-2 sm:gap-3 bg-white/60 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-gray-200 hover:scale-105 transition-transform duration-300 mx-auto sm:mx-0">
+            <span class="text-xl sm:text-2xl animate-float">📱</span>
+            <span class="font-medium text-sm sm:text-base">iOS</span>
+          </div>
+          <div class="flex items-center gap-2 sm:gap-3 bg-white/60 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-gray-200 hover:scale-105 transition-transform duration-300 mx-auto sm:mx-0">
+            <span class="text-xl sm:text-2xl animate-float" style="animation-delay: 2s">🌎</span>
+            <span class="font-medium text-sm sm:text-base">Web</span>
+          </div>
+          <div class="flex items-center gap-2 sm:gap-3 bg-white/60 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-gray-200 hover:scale-105 transition-transform duration-300 mx-auto sm:mx-0">
+            <span class="text-xl sm:text-2xl animate-float" style="animation-delay: 4s">🎨</span>
+            <span class="font-medium text-sm sm:text-base">UI/UX</span>
+          </div>
+        </div>
       </div>
-      <!-- <img src="img/profile-picture.jpg" alt="Profile Picture" class="profile-image"> -->
-    </div>
-    <div class="scroll-indicator">
-      <img src="img/chevron-down.svg" alt="Scroll down" class="chevron-icon">
-      <!-- <span class="scroll-text">Scroll to see more</span> -->
     </div>
   </header>
 
-  <section id="about" class="section-padding">
-    <div class="container about-content scroll-reveal">
-      <div class="about-text">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-paragraph">
-          <p>
-            As an iOS developer who's shipped features for 32M+ users, I've learned that the best apps aren't just about
-            code—they're about making technology feel personal and effortless.</p>
-
-          <p>My journey has taken me from Brazil's tech scene,
-            where I helped build the country's second-largest digital bank, to California's innovation hub.
-            Along the way, I've led development teams, mentored rising developers,
-            and never lost sight of what matters most: creating products that genuinely improve people's lives.</p>
-
-          <p>When I'm not crafting pixel-perfect interfaces or diving into AI innovations,
-            you'll find me bridging cultures through language teaching and exploring ways to make technology more human.
-          </p>
-        </div>
-
-      </div>
-
-      <figure class="about-image">
-        <img src="img/profile-picture2.png" alt="Profile Picture">
-      </figure>
-
-    </div>
-  </section>
-
-  <section id="projects" class="section-padding">
-    <div class="container scroll-reveal">
-      <h2 class="section-title"> Projects</h2>
-
-      <h3>Colaborator</h3>
-      <div class="projects-grid">
-
-        <div class="project-card scroll-reveal-item" onclick="window.location.href='picpay.html'">
-          <div class="project-card-header">
-            <img src="img/picpay-icon.jpg" alt="PicPay icon" class="project-icon">
-            <div>
-              <h3>PicPay</h3>
-              <p>Payment app used by millions of Brazilian daily</p>
-              <span class="label">Swift • Obj-C • Push notifications</span>
-            </div>
-
+  <section id="about" class="py-12 sm:py-24 px-4 sm:px-8 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-8 sm:gap-12 items-center">
+        <div class="md:col-span-3 space-y-6 sm:space-y-8">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-light mb-6 sm:mb-8">
+            <span class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">About</span>
+            <span class="text-gray-800"> Me</span>
+          </h2>
+          <div class="space-y-4 sm:space-y-6 text-gray-600 leading-relaxed">
+            <p class="text-base sm:text-lg">
+              As an iOS developer who's shipped features for <span class="font-semibold text-orange-500">32M+ users</span>, I've learned that the best apps aren't just about code—they're about making technology feel personal and effortless.
+            </p>
+            <p class="text-base sm:text-lg">
+              My journey has taken me from Brazil's tech scene, where I helped build the country's second-largest digital bank, to California's innovation hub. Along the way, I've led development teams, mentored rising developers, and never lost sight of what matters most: creating products that genuinely improve people's lives.
+            </p>
+            <p class="text-base sm:text-lg">
+              When I'm not crafting pixel-perfect interfaces or diving into AI innovations, you'll find me bridging cultures through language teaching and exploring ways to make technology more human.
+            </p>
           </div>
         </div>
-
-      </div>
-
-      <h3>Published</h3>
-      <div class="projects-grid">
-
-        <div class="project-card scroll-reveal-item"
-          onclick="window.location.href='https://github.com/edumtto/20Hints'">
-          <div class="project-card-header">
-            <img src="img/20hints-icon.png" alt="20 Hints" class="project-icon">
-            <div>
-              <h3>20 Hints</h3>
-              <p>Word guessing game with hints</p>
-              <span class="label">Typescript • React Native • Expo</span>
-            </div>
-
+        <div class="md:col-span-2 flex justify-center order-first md:order-last">
+          <div class="relative group">
+            <div class="absolute -inset-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-3xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+            <img src="img/profile-picture2.png" alt="Profile Picture" class="relative w-48 sm:w-64 md:w-80 object-cover rounded-3xl shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
           </div>
         </div>
-
-        <div class="project-card scroll-reveal-item"
-          onclick="window.location.href='https://github.com/edumtto/pick-lottery'">
-          <div class="project-card-header">
-            <img src="img/picklottery-icon.png" alt="PickLottery icon" class="project-icon">
-            <div>
-              <h3>PickLottery</h3>
-              <p>Randomly select values from custom lists</p>
-              <span class="label">Swift • SwiftUI • CoreData</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h3>Prototypes and Experiments</h3>
-
-      <div class="projects-grid">
-
-        <div class="project-card scroll-reveal-item"
-          onclick="window.location.href='https://github.com/edumtto/team-point'">
-          <div class="project-card-header">
-            <img src="img/teampoint-icon.png" alt="Team Point icon" class="project-icon">
-            <div>
-              <h3>TeamPoint</h3>
-              <p>Estimate user stories using Planning Poker</p>
-              <span class="label">SwiftUI • Javascript • Socket.IO</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card scroll-reveal-item"
-          onclick="window.location.href='https://github.com/edumtto/word-search'">
-          <div class="project-card-header">
-            <img src="img/wordsearch-icon.png" alt="Word Search icon" class="project-icon">
-            <div>
-              <h3>WordSearch</h3>
-              <p>Word search game with procedural board creation</p>
-              <span class="label">Swift • SwiftUI • XCTest</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card scroll-reveal-item"
-          onclick="window.location.href='https://github.com/edumtto/check-point'">
-          <div class="project-card-header">
-            <img src="img/checkpoint-icon.png" alt="Checkpoint icon" class="project-icon">
-            <div>
-              <h3>Checkpoint</h3>
-              <p>Track attendance for events and activities</p>
-              <span class="label">Typescript • React • Next.js</span>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section-padding">
-    <div class="container">
-      <h2 class="section-title">Let's Create Something Amazing</h2>
-      <p>I'm always excited to connect with fellow creators and innovators.</p>
-      <div class="contact-links">
-        <a href="mailto:edumottaoliveira+site@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/edumottaoliveira/">LinkedIn</a>
-        <a href="https://github.com/edumtto/">GitHub</a>
+  <section id="projects" class="py-12 sm:py-24 px-4 sm:px-8 bg-gradient-to-b from-gray-50 to-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-light text-center mb-12 sm:mb-16">
+        <span class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Featured</span>
+        <span class="text-gray-800"> Projects</span>
+      </h2>
+
+      <div class="space-y-12 sm:space-y-16">
+        <div>
+          <h3 class="text-xl sm:text-2xl font-medium mb-6 sm:mb-8 text-gray-700 flex items-center gap-3">
+            <div class="w-2 h-6 sm:h-8 bg-gradient-to-b from-orange-500 to-red-500 rounded-full"></div>
+            Collaborator
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <div class="group bg-white rounded-2xl p-4 sm:p-8 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-orange-200 transition-all duration-300 cursor-pointer hover:-translate-y-2" onclick="window.location.href='picpay.html'">
+              <div class="flex items-start gap-3 sm:gap-4">
+                <div class="relative flex-shrink-0">
+                  <div class="absolute -inset-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                  <img src="img/picpay-icon.jpg" alt="PicPay icon" class="relative w-12 sm:w-16 h-12 sm:h-16 rounded-xl shadow-lg">
+                </div>
+                <div class="flex-1 min-w-0">
+                  <h4 class="text-lg sm:text-xl font-semibold text-gray-800 group-hover:text-orange-500 transition-colors mb-2">PicPay</h4>
+                  <p class="text-gray-600 text-sm mb-3 sm:mb-4 leading-relaxed">Payment app used by millions of Brazilians daily</p>
+                  <div class="flex flex-wrap gap-1 sm:gap-2">
+                    <span class="text-xs bg-orange-50 text-orange-600 px-2 sm:px-3 py-1 rounded-full border border-orange-200">Swift</span>
+                    <span class="text-xs bg-orange-50 text-orange-600 px-2 sm:px-3 py-1 rounded-full border border-orange-200">Obj-C</span>
+                    <span class="text-xs bg-orange-50 text-orange-600 px-2 sm:px-3 py-1 rounded-full border border-orange-200">Push notifications</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-medium mb-8 text-gray-700 flex items-center gap-3">
+            <div class="w-2 h-8 bg-gradient-to-b from-orange-500 to-red-500 rounded-full"></div>
+            Published
+          </h3>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-orange-200 transition-all duration-300 cursor-pointer hover:-translate-y-2" onclick="window.location.href='https://github.com/edumtto/20Hints'">
+              <div class="flex items-start gap-4">
+                <div class="relative">
+                  <div class="absolute -inset-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                  <img src="img/20hints-icon.png" alt="20 Hints" class="relative w-16 h-16 rounded-xl shadow-lg">
+                </div>
+                <div class="flex-1">
+                  <h4 class="text-xl font-semibold text-gray-800 group-hover:text-orange-500 transition-colors mb-2">20 Hints</h4>
+                  <p class="text-gray-600 text-sm mb-4 leading-relaxed">Word guessing game with hints</p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="text-xs bg-blue-50 text-blue-600 px-3 py-1 rounded-full border border-blue-200">TypeScript</span>
+                    <span class="text-xs bg-blue-50 text-blue-600 px-3 py-1 rounded-full border border-blue-200">React Native</span>
+                    <span class="text-xs bg-blue-50 text-blue-600 px-3 py-1 rounded-full border border-blue-200">Expo</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-orange-200 transition-all duration-300 cursor-pointer hover:-translate-y-2" onclick="window.location.href='https://github.com/edumtto/pick-lottery'">
+              <div class="flex items-start gap-4">
+                <div class="relative">
+                  <div class="absolute -inset-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                  <img src="img/picklottery-icon.png" alt="PickLottery icon" class="relative w-16 h-16 rounded-xl shadow-lg">
+                </div>
+                <div class="flex-1">
+                  <h4 class="text-xl font-semibold text-gray-800 group-hover:text-orange-500 transition-colors mb-2">PickLottery</h4>
+                  <p class="text-gray-600 text-sm mb-4 leading-relaxed">Randomly select values from custom lists</p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="text-xs bg-orange-50 text-orange-600 px-3 py-1 rounded-full border border-orange-200">Swift</span>
+                    <span class="text-xs bg-orange-50 text-orange-600 px-3 py-1 rounded-full border border-orange-200">SwiftUI</span>
+                    <span class="text-xs bg-orange-50 text-orange-600 px-3 py-1 rounded-full border border-orange-200">CoreData</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-medium mb-8 text-gray-700 flex items-center gap-3">
+            <div class="w-2 h-8 bg-gradient-to-b from-orange-500 to-red-500 rounded-full"></div>
+            Prototypes & Experiments
+          </h3>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-orange-200 transition-all duration-300 cursor-pointer hover:-translate-y-2" onclick="window.location.href='https://github.com/edumtto/team-point'">
+              <div class="flex items-start gap-4">
+                <div class="relative">
+                  <div class="absolute -inset-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                  <img src="img/teampoint-icon.png" alt="Team Point icon" class="relative w-16 h-16 rounded-xl shadow-lg">
+                </div>
+                <div class="flex-1">
+                  <h4 class="text-xl font-semibold text-gray-800 group-hover:text-orange-500 transition-colors mb-2">TeamPoint</h4>
+                  <p class="text-gray-600 text-sm mb-4 leading-relaxed">Estimate user stories using Planning Poker</p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="text-xs bg-green-50 text-green-600 px-3 py-1 rounded-full border border-green-200">SwiftUI</span>
+                    <span class="text-xs bg-green-50 text-green-600 px-3 py-1 rounded-full border border-green-200">JavaScript</span>
+                    <span class="text-xs bg-green-50 text-green-600 px-3 py-1 rounded-full border border-green-200">Socket.IO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-orange-200 transition-all duration-300 cursor-pointer hover:-translate-y-2" onclick="window.location.href='https://github.com/edumtto/word-search'">
+              <div class="flex items-start gap-4">
+                <div class="relative">
+                  <div class="absolute -inset-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                  <img src="img/wordsearch-icon.png" alt="Word Search icon" class="relative w-16 h-16 rounded-xl shadow-lg">
+                </div>
+                <div class="flex-1">
+                  <h4 class="text-xl font-semibold text-gray-800 group-hover:text-orange-500 transition-colors mb-2">WordSearch</h4>
+                  <p class="text-gray-600 text-sm mb-4 leading-relaxed">Word search game with procedural board creation</p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="text-xs bg-orange-50 text-orange-600 px-3 py-1 rounded-full border border-orange-200">Swift</span>
+                    <span class="text-xs bg-orange-50 text-orange-600 px-3 py-1 rounded-full border border-orange-200">SwiftUI</span>
+                    <span class="text-xs bg-orange-50 text-orange-600 px-3 py-1 rounded-full border border-orange-200">XCTest</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-orange-200 transition-all duration-300 cursor-pointer hover:-translate-y-2" onclick="window.location.href='https://github.com/edumtto/check-point'">
+              <div class="flex items-start gap-4">
+                <div class="relative">
+                  <div class="absolute -inset-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                  <img src="img/checkpoint-icon.png" alt="Checkpoint icon" class="relative w-16 h-16 rounded-xl shadow-lg">
+                </div>
+                <div class="flex-1">
+                  <h4 class="text-xl font-semibold text-gray-800 group-hover:text-orange-500 transition-colors mb-2">Checkpoint</h4>
+                  <p class="text-gray-600 text-sm mb-4 leading-relaxed">Track attendance for events and activities</p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="text-xs bg-blue-50 text-blue-600 px-3 py-1 rounded-full border border-blue-200">TypeScript</span>
+                    <span class="text-xs bg-blue-50 text-blue-600 px-3 py-1 rounded-full border border-blue-200">React</span>
+                    <span class="text-xs bg-blue-50 text-blue-600 px-3 py-1 rounded-full border border-blue-200">Next.js</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer>
+  <section id="contact" class="py-12 sm:py-24 px-4 sm:px-8 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,140,0,0.1),transparent_70%)] pointer-events-none"></div>
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-light mb-6 sm:mb-8">
+        <span class="text-white">Let's Create</span>
+        <span class="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent"> Something Amazing</span>
+      </h2>
+      <p class="text-lg sm:text-xl text-gray-300 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed px-2">I'm always excited to connect with fellow creators and innovators.</p>
+      <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6">
+        <a href="mailto:edumottaoliveira+site@gmail.com" class="group bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium transition-all duration-300 hover:bg-orange-500 hover:border-orange-500 hover:scale-105 hover:shadow-2xl">
+          <span class="flex items-center justify-center gap-2 sm:gap-3">
+            <svg class="w-4 sm:w-5 h-4 sm:h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+            </svg>
+            <span class="text-sm sm:text-base">Email</span>
+          </span>
+        </a>
+        <a href="https://www.linkedin.com/in/edumottaoliveira/" class="group bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium transition-all duration-300 hover:bg-blue-600 hover:border-blue-600 hover:scale-105 hover:shadow-2xl">
+          <span class="flex items-center justify-center gap-2 sm:gap-3">
+            <svg class="w-4 sm:w-5 h-4 sm:h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-sm sm:text-base">LinkedIn</span>
+          </span>
+        </a>
+        <a href="https://github.com/edumtto/" class="group bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium transition-all duration-300 hover:bg-gray-700 hover:border-gray-700 hover:scale-105 hover:shadow-2xl">
+          <span class="flex items-center justify-center gap-2 sm:gap-3">
+            <svg class="w-4 sm:w-5 h-4 sm:h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-sm sm:text-base">GitHub</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-black text-gray-400 text-center py-6 sm:py-8 text-xs sm:text-sm border-t border-gray-800 px-4">
     <p>&copy; 2025 Eduardo Oliveira. All rights reserved.</p>
   </footer>
 
