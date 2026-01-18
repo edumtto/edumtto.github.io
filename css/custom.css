@@ -1,0 +1,8 @@
+.squircle-clip {
+  /* width: 48px; */
+  object-fit: cover;
+  mask-image: url(/privacy/);
+  mask-size: cover;
+  -webkit-mask-image: url(/img/squircle.svg);
+  -webkit-mask-size: cover;
+}
