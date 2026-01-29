@@ -21,25 +21,29 @@
   </nav>
 
   <header id="hero" class="min-h-screen w-full bg-gradient-to-br from-gray-50 via-white to-orange-50 flex items-center justify-center px-4 sm:px-8 relative overflow-hidden">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,140,0,0.1),transparent_50%)] pointer-events-none"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,140,0,0.1),transparent_50%)] pointer-events-none animate-pulse"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(255,140,0,0.05),transparent_60%)] pointer-events-none" style="animation: float 6s ease-in-out infinite;"></div>
     <div class="max-w-4xl mx-auto text-center relative z-10">
-      <div class="animate-fade-up">
-        <h1 class="text-5xl sm:text-6xl md:text-7xl mb-6 sm:mb-6">
-          <!-- <span class="text-4xl sm:text-5xl text-gray-800">Hi, I'm</span><br> -->
-          <span class="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent font-semibold leading-none">Eduardo Oliveira</span>
-        </h1>
-        <p class="text-base sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-6 max-w-2xl mx-auto leading-relaxed px-2 animate-fade-up">Turning complexity into clean, intuitive experiences.</p>
-        <div class="flex flex-row justify-center gap-6 text-gray-500 mx-auto animate-fade-up">
-          <div class="flex items-center gap-2 py-2">
+      <div class="space-y-8">
+        <div class="animate-fade-up">
+          <h1 class="text-5xl sm:text-6xl md:text-7xl mb-6 sm:mb-6 transform hover:scale-105 transition-transform duration-500">
+            <span class="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent font-semibold leading-none bg-[length:200%_100%] animate-gradient-x">Eduardo Oliveira</span>
+          </h1>
+        </div>
+        <div class="animate-fade-up" style="animation-delay: 0.1s;">
+          <p class="text-base sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-6 max-w-2xl mx-auto leading-relaxed px-2 transform hover:scale-105 transition-all duration-300">Turning complexity into clean, intuitive experiences.</p>
+        </div>
+        <div class="flex flex-row justify-center gap-6 text-gray-500 mx-auto animate-fade-up" style="animation-delay: 0.6s;">
+          <div class="flex items-center gap-2 py-2 transform hover:scale-110 transition-all duration-300 hover:text-orange-500" style="animation: slideInLeft 0.4s ease-out both;">
             <span class="text-xl sm:text-2xl">📱</span>
             <span class="font-medium text-sm sm:text-base">iOS</span>
           </div>
-          <div class="flex items-center gap-2 py-2">
-            <span class="text-xl sm:text-2xl" style="animation-delay: 2s">🌎</span>
+          <div class="flex items-center gap-2 py-2 transform hover:scale-110 transition-all duration-300 hover:text-orange-500" style="animation: slideInUp 0.4s ease-out 0.4s both;">
+            <span class="text-xl sm:text-2xl">🌎</span>
             <span class="font-medium text-sm sm:text-base">Web</span>
           </div>
-          <div class="flex items-center gap-2 py-2">
-            <span class="text-xl sm:text-2xl" style="animation-delay: 4s">🎨</span>
+          <div class="flex items-center gap-2 py-2 transform hover:scale-110 transition-all duration-300 hover:text-orange-500" style="animation: slideInRight 0.4s ease-out 0.4s both;">
+            <span class="text-xl sm:text-2xl">🎨</span>
             <span class="font-medium text-sm sm:text-base">UI/UX</span>
           </div>
         </div>
