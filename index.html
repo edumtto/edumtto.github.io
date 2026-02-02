@@ -94,23 +94,27 @@
       <div class="space-y-12 sm:space-y-16">
         <div>
           <h3 class="text-xl sm:text-2xl font-medium mb-6 sm:mb-8 text-gray-700 flex items-center gap-3">
-            <div class="w-2 h-6 sm:h-8 bg-gradient-to-b from-orange-500 to-red-500 rounded-full"></div>
+            <div class="w-2 h-6 sm:h-8 bg-orange-500 rounded-full"></div>
             Collaborator
           </h3>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            <div class="group bg-white rounded-2xl p-4 sm:p-8 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-orange-200 transition-all duration-300 cursor-pointer hover:-translate-y-2" onclick="window.location.href='picpay.html'">
+            <div class="group bg-white rounded-xl p-4 sm:p-8 border border-gray-200 hover:border-orange-300 transition-colors duration-200 cursor-pointer" onclick="window.location.href='picpay.html'">
               <div class="flex items-start gap-3 sm:gap-4">
-                <div class="relative flex-shrink-0">
-                  <div class="absolute -inset-1 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition-opacity"></div>
-                  <img src="img/picpay-icon.jpg" alt="PicPay icon" class="relative w-12 sm:w-16 h-12 sm:h-16 squircle-clip shadow-lg">
+                <div class="flex-shrink-0">
+                  <img src="img/picpay-icon.jpg" alt="PicPay icon" class="w-12 sm:w-16 h-12 sm:h-16 squircle-clip">
                 </div>
                 <div class="flex-1 min-w-0">
-                  <h4 class="text-lg sm:text-xl font-semibold text-gray-800 group-hover:text-orange-500 transition-colors mb-2">PicPay</h4>
+                  <div class="flex items-center justify-between mb-2">
+                    <h4 class="text-lg sm:text-xl font-semibold text-gray-800">PicPay</h4>
+                    <svg class="w-4 h-4 text-gray-400 group-hover:text-orange-500 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </div>
                   <p class="text-gray-600 text-sm mb-3 sm:mb-4 leading-relaxed">Payment app used by millions of Brazilians daily</p>
                   <div class="flex flex-wrap gap-1 sm:gap-2">
-                    <span class="text-xs bg-orange-50 text-orange-600 px-2 sm:px-3 py-1 rounded-full border border-orange-200">Swift</span>
-                    <span class="text-xs bg-orange-50 text-orange-600 px-2 sm:px-3 py-1 rounded-full border border-orange-200">Obj-C</span>
-                    <span class="text-xs bg-orange-50 text-orange-600 px-2 sm:px-3 py-1 rounded-full border border-orange-200">Push notifications</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-2 sm:px-3 py-1 rounded-full">Swift</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-2 sm:px-3 py-1 rounded-full">Obj-C</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-2 sm:px-3 py-1 rounded-full">Push notifications</span>
                   </div>
                 </div>
               </div>
@@ -120,41 +124,49 @@
 
         <div>
           <h3 class="text-2xl font-medium mb-8 text-gray-700 flex items-center gap-3">
-            <div class="w-2 h-8 bg-gradient-to-b from-orange-500 to-red-500 rounded-full"></div>
+            <div class="w-2 h-8 bg-orange-500 rounded-full"></div>
             Published
           </h3>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-orange-200 transition-all duration-300 cursor-pointer hover:-translate-y-2" onclick="window.location.href='https://github.com/edumtto/20Hints'">
+            <div class="group bg-white rounded-xl p-8 border border-gray-200 hover:border-orange-300 transition-colors duration-200 cursor-pointer" onclick="window.location.href='https://github.com/edumtto/20Hints'">
               <div class="flex items-start gap-4">
-                <div class="relative">
-                  <div class="absolute -inset-1 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition-opacity"></div>
-                  <img src="img/20hints-icon.png" alt="20 Hints" class="relative w-16 h-16 squircle-clip shadow-lg">
+                <div>
+                  <img src="img/20hints-icon.png" alt="20 Hints" class="w-16 h-16 squircle-clip">
                 </div>
                 <div class="flex-1">
-                  <h4 class="text-xl font-semibold text-gray-800 group-hover:text-orange-500 transition-colors mb-2">20 Hints</h4>
+                  <div class="flex items-center justify-between mb-2">
+                    <h4 class="text-xl font-semibold text-gray-800">20 Hints</h4>
+                    <svg class="w-4 h-4 text-gray-400 group-hover:text-orange-500 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </div>
                   <p class="text-gray-600 text-sm mb-4 leading-relaxed">Word guessing game with hints</p>
                   <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-blue-50 text-blue-600 px-3 py-1 rounded-full border border-blue-200">TypeScript</span>
-                    <span class="text-xs bg-blue-50 text-blue-600 px-3 py-1 rounded-full border border-blue-200">React Native</span>
-                    <span class="text-xs bg-blue-50 text-blue-600 px-3 py-1 rounded-full border border-blue-200">Expo</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">TypeScript</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">React Native</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">Expo</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-orange-200 transition-all duration-300 cursor-pointer hover:-translate-y-2" onclick="window.location.href='https://github.com/edumtto/pick-lottery'">
+            <div class="group bg-white rounded-xl p-8 border border-gray-200 hover:border-orange-300 transition-colors duration-200 cursor-pointer" onclick="window.location.href='https://github.com/edumtto/pick-lottery'">
               <div class="flex items-start gap-4">
-                <div class="relative">
-                  <div class="absolute -inset-1 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition-opacity"></div>
-                  <img src="img/picklottery-icon.png" alt="PickLottery icon" class="relative w-16 h-16 squircle-clip shadow-lg">
+                <div>
+                  <img src="img/picklottery-icon.png" alt="PickLottery icon" class="w-16 h-16 squircle-clip">
                 </div>
                 <div class="flex-1">
-                  <h4 class="text-xl font-semibold text-gray-800 group-hover:text-orange-500 transition-colors mb-2">PickLottery</h4>
+                  <div class="flex items-center justify-between mb-2">
+                    <h4 class="text-xl font-semibold text-gray-800">PickLottery</h4>
+                    <svg class="w-4 h-4 text-gray-400 group-hover:text-orange-500 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </div>
                   <p class="text-gray-600 text-sm mb-4 leading-relaxed">Randomly select values from custom lists</p>
                   <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-orange-50 text-orange-600 px-3 py-1 rounded-full border border-orange-200">Swift</span>
-                    <span class="text-xs bg-orange-50 text-orange-600 px-3 py-1 rounded-full border border-orange-200">SwiftUI</span>
-                    <span class="text-xs bg-orange-50 text-orange-600 px-3 py-1 rounded-full border border-orange-200">CoreData</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">Swift</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">SwiftUI</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">CoreData</span>
                   </div>
                 </div>
               </div>
@@ -164,59 +176,71 @@
 
         <div>
           <h3 class="text-2xl font-medium mb-8 text-gray-700 flex items-center gap-3">
-            <div class="w-2 h-8 bg-gradient-to-b from-orange-500 to-red-500 rounded-full"></div>
+            <div class="w-2 h-8 bg-orange-500 rounded-full"></div>
             Prototypes & Experiments
           </h3>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-orange-200 transition-all duration-300 cursor-pointer hover:-translate-y-2" onclick="window.location.href='https://github.com/edumtto/team-point'">
+            <div class="group bg-white rounded-xl p-8 border border-gray-200 hover:border-orange-300 transition-colors duration-200 cursor-pointer" onclick="window.location.href='https://github.com/edumtto/team-point'">
               <div class="flex items-start gap-4">
-                <div class="relative">
-                  <div class="absolute -inset-1 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition-opacity"></div>
-                  <img src="img/teampoint-icon.png" alt="Team Point icon" class="relative w-16 h-16 squircle-clip shadow-lg">
+                <div>
+                  <img src="img/teampoint-icon.png" alt="Team Point icon" class="w-16 h-16 squircle-clip">
                 </div>
                 <div class="flex-1">
-                  <h4 class="text-xl font-semibold text-gray-800 group-hover:text-orange-500 transition-colors mb-2">TeamPoint</h4>
+                  <div class="flex items-center justify-between mb-2">
+                    <h4 class="text-xl font-semibold text-gray-800">TeamPoint</h4>
+                    <svg class="w-4 h-4 text-gray-400 group-hover:text-orange-500 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </div>
                   <p class="text-gray-600 text-sm mb-4 leading-relaxed">Estimate user stories using Planning Poker</p>
                   <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-green-50 text-green-600 px-3 py-1 rounded-full border border-green-200">SwiftUI</span>
-                    <span class="text-xs bg-green-50 text-green-600 px-3 py-1 rounded-full border border-green-200">JavaScript</span>
-                    <span class="text-xs bg-green-50 text-green-600 px-3 py-1 rounded-full border border-green-200">Socket.IO</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">SwiftUI</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">JavaScript</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">Socket.IO</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-orange-200 transition-all duration-300 cursor-pointer hover:-translate-y-2" onclick="window.location.href='https://github.com/edumtto/word-search'">
+            <div class="group bg-white rounded-xl p-8 border border-gray-200 hover:border-orange-300 transition-colors duration-200 cursor-pointer" onclick="window.location.href='https://github.com/edumtto/word-search'">
               <div class="flex items-start gap-4">
-                <div class="relative">
-                  <div class="absolute -inset-1 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition-opacity"></div>
-                  <img src="img/wordsearch-icon.png" alt="Word Search icon" class="relative w-16 h-16 squircle-clip shadow-lg">
+                <div>
+                  <img src="img/wordsearch-icon.png" alt="Word Search icon" class="w-16 h-16 squircle-clip">
                 </div>
                 <div class="flex-1">
-                  <h4 class="text-xl font-semibold text-gray-800 group-hover:text-orange-500 transition-colors mb-2">WordSearch</h4>
+                  <div class="flex items-center justify-between mb-2">
+                    <h4 class="text-xl font-semibold text-gray-800">WordSearch</h4>
+                    <svg class="w-4 h-4 text-gray-400 group-hover:text-orange-500 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </div>
                   <p class="text-gray-600 text-sm mb-4 leading-relaxed">Word search game with procedural board creation</p>
                   <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-orange-50 text-orange-600 px-3 py-1 rounded-full border border-orange-200">Swift</span>
-                    <span class="text-xs bg-orange-50 text-orange-600 px-3 py-1 rounded-full border border-orange-200">SwiftUI</span>
-                    <span class="text-xs bg-orange-50 text-orange-600 px-3 py-1 rounded-full border border-orange-200">XCTest</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">Swift</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">SwiftUI</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">XCTest</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-orange-200 transition-all duration-300 cursor-pointer hover:-translate-y-2" onclick="window.location.href='https://github.com/edumtto/check-point'">
+            <div class="group bg-white rounded-xl p-8 border border-gray-200 hover:border-orange-300 transition-colors duration-200 cursor-pointer" onclick="window.location.href='https://github.com/edumtto/check-point'">
               <div class="flex items-start gap-4">
-                <div class="relative">
-                  <div class="absolute -inset-1 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition-opacity"></div>
-                  <img src="img/checkpoint-icon.png" alt="Checkpoint icon" class="relative w-16 h-16 squircle-clip shadow-lg">
+                <div>
+                  <img src="img/checkpoint-icon.png" alt="Checkpoint icon" class="w-16 h-16 squircle-clip">
                 </div>
                 <div class="flex-1">
-                  <h4 class="text-xl font-semibold text-gray-800 group-hover:text-orange-500 transition-colors mb-2">Checkpoint</h4>
+                  <div class="flex items-center justify-between mb-2">
+                    <h4 class="text-xl font-semibold text-gray-800">Checkpoint</h4>
+                    <svg class="w-4 h-4 text-gray-400 group-hover:text-orange-500 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </div>
                   <p class="text-gray-600 text-sm mb-4 leading-relaxed">Track attendance for events and activities</p>
                   <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-blue-50 text-blue-600 px-3 py-1 rounded-full border border-blue-200">TypeScript</span>
-                    <span class="text-xs bg-blue-50 text-blue-600 px-3 py-1 rounded-full border border-blue-200">React</span>
-                    <span class="text-xs bg-blue-50 text-blue-600 px-3 py-1 rounded-full border border-blue-200">Next.js</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">TypeScript</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">React</span>
+                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">Next.js</span>
                   </div>
                 </div>
               </div>
