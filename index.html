@@ -9,8 +9,8 @@
   <link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 
-<body>
-  <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-white/80 border-b border-gray-100">
+<body class="bg-gray-50">
+  <!-- <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-white/80 border-b border-gray-100">
     <div class="max-w-4xl mx-auto flex justify-center py-3 px-4">
       <ul class="flex gap-4 sm:gap-8 list-none">
         <li><a href="#about" class="text-gray-700 font-medium text-xs sm:text-sm tracking-wide hover:text-orange-500 transition-all duration-300 hover:scale-105">About</a></li>
@@ -18,11 +18,9 @@
         <li><a href="#contact" class="text-gray-700 font-medium text-xs sm:text-sm tracking-wide hover:text-orange-500 transition-all duration-300 hover:scale-105">Contact</a></li>
       </ul>
     </div>
-  </nav>
+  </nav> -->
 
-  <header id="hero" class="min-h-screen w-full bg-linear-to-b from-orange-50 via-white to-gray-50 flex items-center justify-center px-4 sm:px-8 relative overflow-hidden">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,140,0,0.1),transparent_50%)] pointer-events-none animate-pulse"></div>
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(255,140,0,0.05),transparent_60%)] pointer-events-none" style="animation: float 6s ease-in-out infinite;"></div>
+  <header id="hero" class="min-h-screen w-full flex items-center justify-center px-4 sm:px-8 relative overflow-hidden">
     <div class="max-w-4xl mx-auto text-center relative z-10">
       <div class="space-y-8">
         <div class="animate-fade-up">
@@ -49,14 +47,14 @@
         </div>
       </div>
     </div>
-    <div class="scroll-indicator absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer" style="animation: bounce 2s infinite;">
+    <!-- <div class="scroll-indicator absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer" style="animation: bounce 2s infinite;">
       <svg class="w-6 h-6 text-gray-400 hover:text-orange-500 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
       </svg>
-    </div>
+    </div> -->
   </header>
 
-  <section id="about" class="py-12 sm:py-24 px-4 sm:px-8 bg-white">
+  <section id="about" class="py-12 sm:py-24 px-4 sm:px-8 bg-transparent">
     <div class="max-w-5xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-5 gap-8 sm:gap-12 items-center">
         <div class="md:col-span-3 space-y-6 sm:space-y-8">
@@ -64,23 +62,16 @@
             <span class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">About</span>
             <span class="text-gray-800"> Me</span>
           </h2>
-          <div class="space-y-4 sm:space-y-6 ml-4 text-gray-600 leading-relaxed">
-             <ul class="list-disc list-inside space-y-4 sm:space-y-6 text-base sm:text-lg">
-              <li>
-                <span class="font-bold">Proven Impact:</span> Developed features for 32M+ users, including key contributions to Brazil’s second-largest digital bank.
-              </li>
-              <li>
-                <span class="font-bold">Engineering Leadership:</span> Experienced in leading mobile teams and mentoring developers.
-              </li>
-              <li>
-                <span class="font-bold">User-First Philosophy:</span>
-                 Focused on creating "effortless" technology—blending iOS expertise with human-centered design.
-              </li>
-              <li>
-                <span class="font-bold">Innovative & Adaptive:</span>
-                 Passionate about data analysis, pixel-perfect UI, and AI automation.
-              </li>
-            </ul>
+          <div class="space-y-4 sm:space-y-6 text-gray-600 leading-relaxed">
+            <p>
+              As an iOS developer who's shipped features for 32M+ users, I've learned that the best apps aren't just about code—they're about making technology feel personal and effortless.
+            </p>
+            <p>
+              My journey has taken me from Brazil's tech scene, where I helped build the country's leading digital payment platform , to California's innovation hub. Along the way, I've led development teams, mentored rising developers, and never lost sight of what matters most: creating products that genuinely improve people's lives.
+            </p>
+            <p>
+              When I'm not crafting pixel-perfect interfaces or diving into AI innovations, you'll find me bridging cultures through language teaching and exploring ways to make technology more human.
+            </p>
           </div>
         </div>
         <div class="md:col-span-2 flex justify-center order-first md:order-last">
@@ -93,7 +84,7 @@
     </div>
   </section>
 
-  <section id="projects" class="py-12 sm:py-24 px-4 sm:px-8 bg-gradient-to-b from-gray-50 to-white">
+  <section id="projects" class="py-12 sm:py-24 px-4 sm:px-8 bg-transparent">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-3xl sm:text-4xl md:text-5xl font-light text-center mb-12 sm:mb-16">
         <span class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Featured</span>
@@ -235,51 +226,42 @@
       </div>
     </div>
   </section>
-          </div>
+
+  <section id="contact" class="py-12 sm:py-24 px-4 sm:px-8 bg-transparent overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,140,0,0.1),transparent_70%)] pointer-events-none"></div>
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-light mb-6 sm:mb-8">
+        <span class="text-black">Let's Create</span>
+        <span class="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent"> Something Amazing</span>
+      </h2>
+      <!-- <p class="text-lg sm:text-xl text-gray-300 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed px-2">I'm always excited to connect with fellow creators and innovators.</p> -->
+      <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6">
+  
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="mailto:edumottaoliveira+site@gmail.com" class="bg-white border border-gray-300 text-gray-700 px-6 py-4 rounded-full font-medium transition-colors hover:bg-orange-500 hover:text-white hover:border-orange-500 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            Email
+          </a>
+          <a href="https://www.linkedin.com/in/edumottaoliveira/" class="bg-white border border-gray-300 text-gray-700 px-6 py-4 rounded-full font-medium transition-colors hover:bg-blue-600 hover:text-white hover:border-blue-600 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/edumtto/" class="bg-white border border-gray-300 text-gray-700 px-6 py-4 rounded-full font-medium transition-colors hover:bg-gray-700 hover:text-white hover:border-gray-700 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="py-12 sm:py-24 px-4 sm:px-8 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white relative overflow-hidden">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,140,0,0.1),transparent_70%)] pointer-events-none"></div>
-    <div class="max-w-4xl mx-auto text-center relative z-10">
-      <h2 class="text-3xl sm:text-4xl md:text-5xl font-light mb-6 sm:mb-8">
-        <span class="text-white">Let's Create</span>
-        <span class="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent"> Something Amazing</span>
-      </h2>
-      <!-- <p class="text-lg sm:text-xl text-gray-300 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed px-2">I'm always excited to connect with fellow creators and innovators.</p> -->
-      <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6">
-        <a href="mailto:edumottaoliveira+site@gmail.com" class="group bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium transition-all duration-300 hover:bg-orange-500 hover:border-orange-500 hover:scale-105 hover:shadow-2xl">
-          <span class="flex items-center justify-center gap-2 sm:gap-3">
-            <svg class="w-4 sm:w-5 h-4 sm:h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-            </svg>
-            <span class="text-sm sm:text-base">Email</span>
-          </span>
-        </a>
-        <a href="https://www.linkedin.com/in/edumottaoliveira/" class="group bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium transition-all duration-300 hover:bg-blue-600 hover:border-blue-600 hover:scale-105 hover:shadow-2xl">
-          <span class="flex items-center justify-center gap-2 sm:gap-3">
-            <svg class="w-4 sm:w-5 h-4 sm:h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
-            </svg>
-            <span class="text-sm sm:text-base">LinkedIn</span>
-          </span>
-        </a>
-        <a href="https://github.com/edumtto/" class="group bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium transition-all duration-300 hover:bg-gray-700 hover:border-gray-700 hover:scale-105 hover:shadow-2xl">
-          <span class="flex items-center justify-center gap-2 sm:gap-3">
-            <svg class="w-4 sm:w-5 h-4 sm:h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
-            </svg>
-            <span class="text-sm sm:text-base">GitHub</span>
-          </span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="bg-black text-gray-400 text-center py-6 sm:py-8 text-xs sm:text-sm border-t border-gray-800 px-4">
+  <footer class="bg-transparent text-gray-400 text-center py-6 sm:py-8 text-xs sm:text-sm border-t border-gray-200 px-4">
     <p>&copy; 2025 Eduardo Oliveira. All rights reserved.</p>
   </footer>
 
