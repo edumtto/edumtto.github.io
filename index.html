@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eduardo Oliveira — Software Engineer</title>
+  <title>Eduardo Oliveira — iOS &amp; Full-Stack Software Engineer</title>
   <meta name="description" content="Software engineer with 6+ years building consumer mobile apps (native iOS, React Native) and the backends behind them.">
   <meta name="color-scheme" content="dark">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,22 +16,31 @@
 <body>
   <nav class="tabs" aria-label="Sections">
     <div class="wrap">
-      <a href="#top" class="active" data-tab>readme.md</a>
-      <a href="#experience" data-tab>experience.log</a>
-      <a href="#work" data-tab>work/</a>
-      <a href="#stack" data-tab>stack.json</a>
-      <a href="#contact" data-tab>contact.sh</a>
+      <a href="#top" class="active" data-tab>Home</a>
+      <a href="#experience" data-tab>Experience</a>
+      <a href="#work" data-tab>Work</a>
+      <a href="#stack" data-tab>Skills</a>
+      <a href="#contact" data-tab>Contact</a>
     </div>
   </nav>
 
   <main id="top">
     <header class="hero wrap">
-      <p class="comment">// hi, I'm</p>
-      <h1>Eduardo Oliveira<span class="cursor" aria-hidden="true"></span><br><span class="accent">Software engineer.</span></h1>
+      <h1>Eduardo Oliveira<span class="cursor" aria-hidden="true"></span><br><span class="accent">iOS &amp; full-stack engineer.</span></h1>
       <p class="lead">
-        I build consumer mobile apps and the backends behind them. Six years in, from native iOS at a 60M-user
-        fintech to React Native and Laravel on AWS.
+        I build consumer mobile apps and the backends behind them. Six years in, from native iOS (Swift) at a
+        60M-user fintech to React Native and Laravel on AWS.
       </p>
+      <div class="stats">
+        <div><b>60M+</b><span>users on the financial products I built at PicPay</span></div>
+        <div><b>1M+</b><span>new accounts from the savings product I led, in 3 months</span></div>
+        <div><b>60%</b><span>lower infrastructure cost after migrating a backend to AWS</span></div>
+      </div>
+      <div class="actions">
+        <span id="email-btn"></span>
+        <a class="btn" href="https://www.linkedin.com/in/edumottaoliveira/">LinkedIn</a>
+        <a class="btn" href="https://github.com/edumtto/">GitHub</a>
+      </div>
       <div class="meta">
         <span><span class="ok">●</span> open to work</span>
         <span>Sacramento, CA</span>
@@ -138,7 +147,7 @@
       </section>
 
       <section id="stack">
-        <h2 class="sec-title"><b>#</b><span>stack</span></h2>
+        <h2 class="sec-title"><b>#</b><span>skills</span></h2>
         <dl class="stack-grid">
           <dt>mobile</dt>
           <dd><span>Swift</span><i>/</i><span>UIKit</span><i>/</i><span>SwiftUI</span><i>/</i><span>React Native</span><i>/</i><span>TypeScript</span></dd>
@@ -188,13 +197,22 @@
   <script>
     // Build the email link at runtime so it is not in the raw HTML for scrapers.
     (function () {
-      var el = document.getElementById('email');
-      if (!el) return;
       var u = ['edumottaoliveira', 'site'].join('+'), d = ['gmail', 'com'].join('.');
-      var a = document.createElement('a');
-      a.href = 'mailto:' + u + '@' + d;
-      a.textContent = 'edumottaoliveira@' + d;
-      el.appendChild(a);
+      var el = document.getElementById('email');
+      if (el) {
+        var a = document.createElement('a');
+        a.href = 'mailto:' + u + '@' + d;
+        a.textContent = 'edumottaoliveira@' + d;
+        el.appendChild(a);
+      }
+      var btn = document.getElementById('email-btn');
+      if (btn) {
+        var b = document.createElement('a');
+        b.className = 'btn primary';
+        b.href = 'mailto:' + u + '@' + d;
+        b.textContent = 'Email me';
+        btn.replaceWith(b);
+      }
     })();
 
     // Highlight the tab for the section currently in view.

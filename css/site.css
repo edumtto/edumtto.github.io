@@ -214,3 +214,15 @@ video.demo { width: 100%; max-width: 300px; border: 1px solid var(--line); borde
   .feature img { max-width: 260px; }
   .shots { grid-template-columns: 1fr 1fr; }
 }
+
+/* Hero highlights and calls to action ------------------------ */
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 36px; max-width: 740px; }
+.stats > div { border-left: 2px solid var(--blue); padding-left: 14px; }
+.stats b { display: block; font-size: 28px; line-height: 1.15; font-weight: 600; color: var(--text-bright); letter-spacing: -0.01em; }
+.stats span { display: block; margin-top: 4px; font-size: 14px; line-height: 1.5; color: var(--text-dim); }
+.actions { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 10px; }
+.btn { display: inline-block; padding: 9px 18px; border: 1px solid var(--line); border-radius: 4px; color: var(--text-bright); font-size: 14.5px; font-weight: 500; }
+.btn:hover { border-color: var(--text-dim); text-decoration: none; }
+.btn.primary { background: var(--blue); border-color: var(--blue); color: #0b1220; font-weight: 600; }
+.btn.primary:hover { filter: brightness(1.1); }
+@media (max-width: 680px) { .stats { grid-template-columns: 1fr; gap: 16px; } }
