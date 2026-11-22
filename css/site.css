@@ -211,7 +211,7 @@ video.demo { width: 100%; max-width: 300px; border: 1px solid var(--line); borde
 .back { font: 13px var(--mono); }
 @media (max-width: 680px) {
   .feature { grid-template-columns: 1fr; gap: 20px; }
-  .feature img { max-width: 260px; }
+  .feature img { max-width: 170px; }
   .shots { grid-template-columns: 1fr 1fr; }
 }
 
