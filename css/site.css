@@ -230,3 +230,16 @@ video.demo { width: 100%; max-width: 300px; border: 1px solid var(--line); borde
   .tabs a { padding: 11px 9px; font-size: 12.5px; }
   .tabs a.active { padding-bottom: 12px; }
 }
+
+/* Privacy policy page ---------------------------------------- */
+.legal { padding-top: 64px; padding-bottom: 96px; max-width: 820px; }
+.legal h1 { font-size: clamp(30px, 5vw, 40px); line-height: 1.2; font-weight: 600; letter-spacing: -0.02em; color: var(--text-bright); margin-bottom: 8px; }
+.legal h2 { font-size: 22px; font-weight: 600; color: var(--text-bright); margin: 48px 0 12px; }
+.legal h3 { font-size: 17px; font-weight: 600; color: var(--text-bright); margin: 28px 0 8px; }
+.legal h4 { font: 500 14px var(--mono); color: var(--yellow); margin: 20px 0 6px; }
+.legal p { margin-bottom: 14px; }
+.legal ul { padding-left: 22px; margin-bottom: 16px; }
+.legal li { margin-bottom: 8px; }
+.legal li p { margin: 0; }
+.legal li::marker { color: var(--text-dim); }
+.legal strong { color: var(--text-bright); font-weight: 600; }
