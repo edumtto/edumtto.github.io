@@ -30,7 +30,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 ::selection { background: #264f78; color: #fff; }
 :focus-visible { outline: 1px solid var(--blue); outline-offset: 3px; }
 
-.mono { font-family: var(--mono); }
 .dim { color: var(--text-dim); }
 .wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
 
@@ -55,7 +54,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* Hero ------------------------------------------------------- */
 .hero { padding-top: 96px; padding-bottom: 72px; }
-.hero .comment { font: 13.5px var(--mono); color: var(--green); margin-bottom: 20px; }
 .hero h1 {
   font-size: clamp(32px, 6vw, 48px);
   line-height: 1.15;
