@@ -4,319 +4,217 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eduardo Oliveira</title>
-  <link rel="stylesheet" type="text/css" href="css/output.css">
-  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <title>Eduardo Oliveira — Software Engineer</title>
+  <meta name="description" content="Software engineer with 6+ years building consumer mobile apps (native iOS, React Native) and the backends behind them.">
+  <meta name="color-scheme" content="dark">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
 </head>
 
-<body class="bg-gray-50">
-  <!-- <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-white/80 border-b border-gray-100">
-    <div class="max-w-4xl mx-auto flex justify-center py-3 px-4">
-      <ul class="flex gap-4 sm:gap-8 list-none">
-        <li><a href="#about" class="text-gray-700 font-medium text-xs sm:text-sm tracking-wide hover:text-orange-500 transition-all duration-300 hover:scale-105">About</a></li>
-        <li><a href="#projects" class="text-gray-700 font-medium text-xs sm:text-sm tracking-wide hover:text-orange-500 transition-all duration-300 hover:scale-105">Projects</a></li>
-        <li><a href="#contact" class="text-gray-700 font-medium text-xs sm:text-sm tracking-wide hover:text-orange-500 transition-all duration-300 hover:scale-105">Contact</a></li>
-      </ul>
+<body>
+  <nav class="tabs" aria-label="Sections">
+    <div class="wrap">
+      <a href="#top" class="active" data-tab>readme.md</a>
+      <a href="#experience" data-tab>experience.log</a>
+      <a href="#work" data-tab>work/</a>
+      <a href="#stack" data-tab>stack.json</a>
+      <a href="#contact" data-tab>contact.sh</a>
     </div>
-  </nav> -->
+  </nav>
 
-  <!-- <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,140,0,0.1),transparent_70%)] pointer-events-none"></div> -->
-  <header id="hero" class="min-h-screen w-full flex items-center justify-center px-4 sm:px-8 relative overflow-hidden">
-    <div class="max-w-4xl mx-auto text-center relative z-10">
-      <div class="space-y-8">
-        <div class="animate-fade-up">
-          <h1 class="text-5xl sm:text-6xl md:text-7xl mb-6 sm:mb-6 transform hover:scale-105 transition-transform duration-500">
-            <span class="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent font-semibold leading-none">Eduardo Oliveira</span>
-          </h1>
-        </div>
-        <div>
-          <p class="text-base sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-6 max-w-2xl mx-auto leading-relaxed px-2 transform hover:scale-105 transition-all duration-300">
-            <span class="animate-fade-up" style="animation-delay: 0.7s;">Solving problems</span>
-            <span class="animate-fade-up" style="animation-delay: 1s;">with clean</span><span class="animate-fade-up" style="animation-delay: 1.5s;">, intuitive experiences.</span>
-        </div>
-        <div class="flex flex-row justify-center gap-6 text-gray-500 mx-auto">
-          <div class="flex items-center gap-2 py-2 transform hover:scale-110 transition-all duration-300 hover:text-orange-500" style="animation: slideInUp 1s ease-out 2s both;">
-            <span class="text-xl sm:text-2xl">📱</span>
-            <span class="font-medium text-sm sm:text-base">iOS</span>
-          </div>
-          <div class="flex items-center gap-2 py-2 transform hover:scale-110 transition-all duration-300 hover:text-orange-500" style="animation: slideInUp 1s ease-out 2.2s both;">
-            <span class="text-xl sm:text-2xl">🌎</span>
-            <span class="font-medium text-sm sm:text-base">Web</span>
-          </div>
-          <div class="flex items-center gap-2 py-2 transform hover:scale-110 transition-all duration-300 hover:text-orange-500" style="animation: slideInUp 1s ease-out 2.4s both;">
-            <span class="text-xl sm:text-2xl">🎨</span>
-            <span class="font-medium text-sm sm:text-base">UI/UX</span>
-          </div>
-        </div>
+  <main id="top">
+    <header class="hero wrap">
+      <p class="comment">// hi, I'm</p>
+      <h1>Eduardo Oliveira<span class="cursor" aria-hidden="true"></span><br><span class="accent">Software engineer.</span></h1>
+      <p class="lead">
+        I build consumer mobile apps and the backends behind them. Six years in, from native iOS at a 60M-user
+        fintech to React Native and Laravel on AWS.
+      </p>
+      <div class="meta">
+        <span><span class="ok">●</span> open to work</span>
+        <span>Sacramento, CA</span>
+        <span>remote ok</span>
       </div>
-    </div>
-    <div class="scroll-indicator absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer" style="animation: bounce 2s infinite;">
-      <svg class="w-6 h-6 text-gray-400 hover:text-orange-500 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-      </svg>
-    </div>
-  </header>
+    </header>
 
-  <section id="about" class="py-12 sm:py-24 px-4 sm:px-8 bg-transparent">
-    <div class="max-w-5xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-5 gap-8 sm:gap-12 items-center">
-        <div class="md:col-span-3 space-y-6 sm:space-y-8">
-          <h2 class="text-3xl sm:text-4xl md:text-5xl font-light mb-6 sm:mb-8">
-            <span class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">About</span>
-            <span class="text-gray-800"> Me</span>
-          </h2>
-          <div class="space-y-4 sm:space-y-6 text-gray-600 leading-relaxed">
-            <p>
-              As an iOS developer who's shipped features for 32M+ users, I've learned that the best apps aren't just about code—they're about making technology feel personal and effortless.
-            </p>
-            <p>
-              My journey has taken me from Brazil's tech scene, where I helped build the country's leading digital payment platform , to California's innovation hub. Along the way, I've led development teams, mentored rising developers, and never lost sight of what matters most: creating products that genuinely improve people's lives.
-            </p>
-            <p>
-              When I'm not crafting pixel-perfect interfaces or diving into AI innovations, you'll find me bridging cultures through language teaching and exploring ways to make technology more human.
-            </p>
+    <div class="wrap">
+
+      <section id="experience">
+        <h2 class="sec-title"><b>#</b><span>experience</span></h2>
+
+        <article class="job">
+          <div class="when">2026 → now</div>
+          <div>
+            <h3>Full Stack Application Engineer <span class="at">@ 5 Point App</span></h3>
+            <p class="where">Remote</p>
+            <ul>
+              <li>Migrated the backend to AWS, <b>cutting infrastructure costs by 60%</b> and improving security.</li>
+              <li>Ship features end to end: React Native clients, Laravel APIs, SQL, and logging to keep it stable.</li>
+              <li>Introduced AI-assisted code review and standardized QA and release processes.</li>
+            </ul>
+            <div class="tags"><span class="tag">React Native</span><span class="tag">TypeScript</span><span class="tag">Laravel</span><span class="tag">AWS</span><span class="tag">SQL</span></div>
           </div>
-        </div>
-        <div class="md:col-span-2 flex justify-center order-first md:order-last">
-          <div class="relative group">
-            <div class="absolute -inset-1 rounded-3xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
-            <img src="img/profile-picture2.png" alt="Profile Picture" class="relative w-48 sm:w-64 md:w-80 object-cover rounded-3xl transform group-hover:scale-105 transition-transform duration-300">
+        </article>
+
+        <article class="job muted">
+          <div class="when">2023 → 2025</div>
+          <div>
+            <h3>Career transition</h3>
+            <p class="where">Sacramento, CA</p>
+            <ul>
+              <li>Earned Google certificates in Data Analysis (via Calbright College) and UX Design.</li>
+              <li>Freelance engineering for Lumity Media (see <a href="lumity.html">Lumity Recap</a>); taught Portuguese and ran community programs for older adults.</li>
+            </ul>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </article>
 
-  <section id="projects" class="py-12 sm:py-24 px-4 sm:px-8 bg-transparent">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl sm:text-4xl md:text-5xl font-light text-center mb-12 sm:mb-16">
-        <span class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Featured</span>
-        <span class="text-gray-800"> Projects</span>
-      </h2>
-
-      <div class="space-y-12 sm:space-y-16">
-        <div>
-          <h3 class="text-xl sm:text-2xl font-medium mb-6 sm:mb-8 text-gray-700 flex items-center gap-3">
-            <div class="w-2 h-6 sm:h-8 bg-orange-500 rounded-full"></div>
-            Collaborator
-          </h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-
-            <div class="group bg-white rounded-xl p-4 sm:p-8 border border-gray-200 hover:border-orange-300 transition-colors duration-200 cursor-pointer" onclick="window.location.href='picpay.html'">
-              <div class="flex items-start gap-3 sm:gap-4">
-                <div class="flex-shrink-0">
-                  <img src="img/picpay-icon.jpg" alt="PicPay icon" class="w-12 sm:w-16 h-12 sm:h-16 squircle-clip">
-                </div>
-                <div class="flex-1 min-w-0">
-                  <div class="flex items-center justify-between mb-2">
-                    <h4 class="text-lg sm:text-xl font-semibold text-gray-800">PicPay</h4>
-                    <svg class="w-4 h-4 text-gray-400 group-hover:text-orange-500 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                  </div>
-                  <p class="text-gray-600 text-sm mb-3 sm:mb-4 leading-relaxed">Payment app used by millions of Brazilians daily</p>
-                  <div class="flex flex-wrap gap-1 sm:gap-2">
-                    <span class="text-xs bg-gray-100 text-gray-700 px-2 sm:px-3 py-1 rounded-full">Swift</span>
-                    <span class="text-xs bg-gray-100 text-gray-700 px-2 sm:px-3 py-1 rounded-full">Obj-C</span>
-                    <span class="text-xs bg-gray-100 text-gray-700 px-2 sm:px-3 py-1 rounded-full">UIKit</span>
-                    <span class="text-xs bg-gray-100 text-gray-700 px-2 sm:px-3 py-1 rounded-full">Push Notifications</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="group bg-white rounded-xl p-8 border border-gray-200 hover:border-orange-300 transition-colors duration-200 cursor-pointer" onclick="window.location.href='lumity.html'">
-              <div class="flex items-start gap-4">
-                <div>
-                  <img src="img/lumity-icon.png" alt="Lumity Recap" class="w-16 h-16 squircle-clip">
-                </div>
-                <div class="flex-1">
-                  <div class="flex items-center justify-between mb-2">
-                    <h4 class="text-xl font-semibold text-gray-800">Lumity Recap</h4>
-                    <svg class="w-4 h-4 text-gray-400 group-hover:text-orange-500 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                  </div>
-                  <p class="text-gray-600 text-sm mb-4 leading-relaxed">Customized user activity recap for 2025</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">React</span>
-                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">Node.js</span>
-                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">UIKit</span>
-                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">SQL</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <article class="job">
+          <div class="when">2018 → 2022</div>
+          <div>
+            <h3>Senior iOS Engineer <span class="at">@ PicPay</span></h3>
+            <p class="where">São Paulo, Brazil</p>
+            <ul>
+              <li>Built financial products on a native iOS stack for <b>60M+ users</b>.</li>
+              <li>Led development of a savings account product that <b>opened 1M+ accounts in 3 months</b>.</li>
+              <li>Lifted registrations by 7.2% and activation by 5.8% with interactive UI improvements.</li>
+              <li>Worked alongside 100+ iOS engineers; mentored 6 and onboarded 30+.</li>
+              <li>Owned the full lifecycle: planning, coding, reviewing, releasing, monitoring.</li>
+            </ul>
+            <div class="tags"><span class="tag">Swift</span><span class="tag">Obj-C</span><span class="tag">UIKit</span><span class="tag">MVVM</span><span class="tag">Coordinator</span></div>
           </div>
-        </div>
+        </article>
+      </section>
 
-        <div>
-          <h3 class="text-2xl font-medium mb-8 text-gray-700 flex items-center gap-3">
-            <div class="w-2 h-8 bg-orange-500 rounded-full"></div>
-            Published
-          </h3>
-          <div class="grid md:grid-cols-2 gap-6">
-            <div class="group bg-white rounded-xl p-8 border border-gray-200 hover:border-orange-300 transition-colors duration-200 cursor-pointer" onclick="window.location.href='https://github.com/edumtto/20Hints'">
-              <div class="flex items-start gap-4">
-                <div>
-                  <img src="img/20hints-icon.png" alt="20 Hints" class="w-16 h-16 squircle-clip">
-                </div>
-                <div class="flex-1">
-                  <div class="flex items-center justify-between mb-2">
-                    <h4 class="text-xl font-semibold text-gray-800">20 Hints</h4>
-                    <svg class="w-4 h-4 text-gray-400 group-hover:text-orange-500 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                  </div>
-                  <p class="text-gray-600 text-sm mb-4 leading-relaxed">Word guessing game with hints</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">TypeScript</span>
-                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">React Native</span>
-                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">Expo</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <section id="work">
+        <h2 class="sec-title"><b>#</b><span>selected work</span></h2>
 
-            <div class="group bg-white rounded-xl p-8 border border-gray-200 hover:border-orange-300 transition-colors duration-200 cursor-pointer" onclick="window.location.href='https://github.com/edumtto/pick-lottery'">
-              <div class="flex items-start gap-4">
-                <div>
-                  <img src="img/picklottery-icon.png" alt="PickLottery icon" class="w-16 h-16 squircle-clip">
-                </div>
-                <div class="flex-1">
-                  <div class="flex items-center justify-between mb-2">
-                    <h4 class="text-xl font-semibold text-gray-800">PickLottery</h4>
-                    <svg class="w-4 h-4 text-gray-400 group-hover:text-orange-500 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                  </div>
-                  <p class="text-gray-600 text-sm mb-4 leading-relaxed">Randomly select values from custom lists</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">Swift</span>
-                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">SwiftUI</span>
-                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">CoreData</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <h3 class="text-2xl font-medium mb-8 text-gray-700 flex items-center gap-3">
-            <div class="w-2 h-8 bg-orange-500 rounded-full"></div>
-            Prototypes & Experiments
-          </h3>
-          <div class="grid md:grid-cols-2 gap-6">
-            <div class="group bg-white rounded-xl p-8 border border-gray-200 hover:border-orange-300 transition-colors duration-200 cursor-pointer" onclick="window.location.href='https://github.com/edumtto/team-point'">
-              <div class="flex items-start gap-4">
-                <div>
-                  <img src="img/teampoint-icon.png" alt="Team Point icon" class="w-16 h-16 squircle-clip">
-                </div>
-                <div class="flex-1">
-                  <div class="flex items-center justify-between mb-2">
-                    <h4 class="text-xl font-semibold text-gray-800">TeamPoint</h4>
-                    <svg class="w-4 h-4 text-gray-400 group-hover:text-orange-500 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                  </div>
-                  <p class="text-gray-600 text-sm mb-4 leading-relaxed">Estimate user stories using Planning Poker</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">SwiftUI</span>
-                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">JavaScript</span>
-                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">Socket.IO</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="group bg-white rounded-xl p-8 border border-gray-200 hover:border-orange-300 transition-colors duration-200 cursor-pointer" onclick="window.location.href='https://github.com/edumtto/word-search'">
-              <div class="flex items-start gap-4">
-                <div>
-                  <img src="img/wordsearch-icon.png" alt="Word Search icon" class="w-16 h-16 squircle-clip">
-                </div>
-                <div class="flex-1">
-                  <div class="flex items-center justify-between mb-2">
-                    <h4 class="text-xl font-semibold text-gray-800">WordSearch</h4>
-                    <svg class="w-4 h-4 text-gray-400 group-hover:text-orange-500 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                  </div>
-                  <p class="text-gray-600 text-sm mb-4 leading-relaxed">Word search game with procedural board creation</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">Swift</span>
-                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">SwiftUI</span>
-                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">XCTest</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="group bg-white rounded-xl p-8 border border-gray-200 hover:border-orange-300 transition-colors duration-200 cursor-pointer" onclick="window.location.href='https://github.com/edumtto/check-point'">
-              <div class="flex items-start gap-4">
-                <div>
-                  <img src="img/checkpoint-icon.png" alt="Checkpoint icon" class="w-16 h-16 squircle-clip">
-                </div>
-                <div class="flex-1">
-                  <div class="flex items-center justify-between mb-2">
-                    <h4 class="text-xl font-semibold text-gray-800">Checkpoint</h4>
-                    <svg class="w-4 h-4 text-gray-400 group-hover:text-orange-500 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                  </div>
-                  <p class="text-gray-600 text-sm mb-4 leading-relaxed">Track attendance for events and activities</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">TypeScript</span>
-                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">React</span>
-                    <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">Next.js</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="py-12 sm:py-24 px-4 sm:px-8 bg-transparent overflow-hidden">
-    <div class="max-w-4xl mx-auto text-center relative z-10">
-      <h2 class="text-3xl sm:text-4xl md:text-5xl font-light mb-6 sm:mb-8">
-        <span class="text-black">Let's Create</span>
-        <span class="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent"> Something Amazing</span>
-      </h2>
-      <!-- <p class="text-lg sm:text-xl text-gray-300 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed px-2">I'm always excited to connect with fellow creators and innovators.</p> -->
-      <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6">
-  
-        <div class="flex flex-wrap justify-center gap-4">
-          <a href="mailto:edumottaoliveira+site@gmail.com" class="bg-white border border-gray-300 text-gray-700 px-6 py-4 rounded-full font-medium transition-colors hover:border-orange-300 flex items-center gap-2">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-            </svg>
-            Email
+        <div class="cases">
+          <a class="case" href="picpay.html">
+            <div class="path">work/picpay</div>
+            <h3>PicPay</h3>
+            <p>Savings account, wallet and home feed for Brazil's leading digital payments app. Case study with screens and architecture notes.</p>
+            <span class="go">read case study</span>
           </a>
-          <a href="https://www.linkedin.com/in/edumottaoliveira/" class="bg-white border border-gray-300 text-gray-700 px-6 py-4 rounded-full font-medium transition-colors hover:border-orange-300 flex items-center gap-2">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-            </svg>
-            LinkedIn
-          </a>
-          <a href="https://github.com/edumtto/" class="bg-white border border-gray-300 text-gray-700 px-6 py-4 rounded-full font-medium transition-colors hover:border-orange-300 flex items-center gap-2">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-            </svg>
-            GitHub
+          <a class="case" href="lumity.html">
+            <div class="path">work/lumity-recap</div>
+            <h3>Lumity Recap 2025</h3>
+            <p>A "year in review" experience across books, podcasts and video: React web app, Node API, and native iOS integration.</p>
+            <span class="go">read case study</span>
           </a>
         </div>
-      </div>
+
+        <details class="archive">
+          <summary>side-projects/ <span class="dim">(5 small experiments)</span></summary>
+          <ul class="files">
+            <li>
+              <a class="name" href="https://github.com/edumtto/20Hints">20-hints</a>
+              <span class="desc">Word guessing game with hints</span>
+              <span class="stack">React Native · Expo</span>
+            </li>
+            <li>
+              <a class="name" href="https://github.com/edumtto/word-search">word-search</a>
+              <span class="desc">Word search with procedural board generation</span>
+              <span class="stack">SwiftUI · XCTest</span>
+            </li>
+            <li>
+              <a class="name" href="https://github.com/edumtto/team-point">team-point</a>
+              <span class="desc">Planning Poker for estimating user stories</span>
+              <span class="stack">SwiftUI · Socket.IO</span>
+            </li>
+            <li>
+              <a class="name" href="https://github.com/edumtto/check-point">check-point</a>
+              <span class="desc">Attendance tracking for events</span>
+              <span class="stack">Next.js · TypeScript</span>
+            </li>
+            <li>
+              <a class="name" href="https://github.com/edumtto/pick-lottery">pick-lottery</a>
+              <span class="desc">Randomly pick values from custom lists</span>
+              <span class="stack">SwiftUI · CoreData</span>
+            </li>
+          </ul>
+        </details>
+      </section>
+
+      <section id="stack">
+        <h2 class="sec-title"><b>#</b><span>stack</span></h2>
+        <dl class="stack-grid">
+          <dt>mobile</dt>
+          <dd><span>Swift</span><i>/</i><span>UIKit</span><i>/</i><span>SwiftUI</span><i>/</i><span>React Native</span><i>/</i><span>TypeScript</span></dd>
+          <dt>backend &amp; cloud</dt>
+          <dd><span>AWS</span><i>/</i><span>Laravel</span><i>/</i><span>Node.js</span><i>/</i><span>REST</span><i>/</i><span>SQL</span><i>/</i><span>CI/CD</span></dd>
+          <dt>product</dt>
+          <dd><span>UX research</span><i>/</i><span>Figma</span><i>/</i><span>data analysis</span><i>/</i><span>Agile</span></dd>
+          <dt>languages</dt>
+          <dd><span>English</span><i>/</i><span>Portuguese</span><i>/</i><span>Spanish</span> <span class="dim">(fluent in all three)</span></dd>
+        </dl>
+      </section>
+
+      <section id="about" class="about">
+        <h2 class="sec-title"><b>#</b><span>about</span></h2>
+        <p>
+          I studied Computer Science at UFES in Brazil, with a year at UC Davis, then spent four years at PicPay
+          shipping to tens of millions of people. I moved to California in 2023 and spent time getting hands-on
+          with data and UX, which still shapes how I build: start from the user and the numbers, then write the code.
+        </p>
+        <p>
+          Outside of work I'm VP of Public Relations at my Toastmasters club and I tutor Portuguese.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2 class="sec-title"><b>#</b><span>contact</span></h2>
+        <ul class="contact-list">
+          <li><span class="k">email</span>    <span class="p">=</span> <span id="email"><noscript>(enable JavaScript, or use LinkedIn)</noscript></span></li>
+          <li><span class="k">github</span>   <span class="p">=</span> <a href="https://github.com/edumtto/">github.com/edumtto</a></li>
+          <li><span class="k">linkedin</span> <span class="p">=</span> <a href="https://www.linkedin.com/in/edumottaoliveira/">linkedin.com/in/edumottaoliveira</a></li>
+        </ul>
+      </section>
+
+      <footer class="site">&copy; 2026 Eduardo Oliveira</footer>
     </div>
-  </section>
+  </main>
 
-  <footer class="bg-transparent text-gray-400 text-center py-6 sm:py-8 text-xs sm:text-sm border-t border-gray-200 px-4">
-    <p>&copy; 2025 Eduardo Oliveira. All rights reserved.</p>
-  </footer>
+  <div class="status" role="presentation">
+    <div class="wrap">
+      <span class="branch">⎇ main</span>
+      <span class="hide-sm">Sacramento, CA</span>
+      <span class="push hide-sm">Swift · TypeScript</span>
+      <span>UTF-8</span>
+    </div>
+  </div>
 
-  <script src="js/script.js"></script>
+  <script>
+    // Build the email link at runtime so it is not in the raw HTML for scrapers.
+    (function () {
+      var el = document.getElementById('email');
+      if (!el) return;
+      var u = ['edumottaoliveira', 'site'].join('+'), d = ['gmail', 'com'].join('.');
+      var a = document.createElement('a');
+      a.href = 'mailto:' + u + '@' + d;
+      a.textContent = 'edumottaoliveira@' + d;
+      el.appendChild(a);
+    })();
+
+    // Highlight the tab for the section currently in view.
+    (function () {
+      var tabs = [].slice.call(document.querySelectorAll('[data-tab]'));
+      var map = {};
+      tabs.forEach(function (t) { map[t.getAttribute('href').slice(1)] = t; });
+      var targets = tabs.map(function (t) {
+        return document.getElementById(t.getAttribute('href').slice(1));
+      });
+      function update() {
+        var y = window.scrollY + 120, current = tabs[0];
+        targets.forEach(function (el, i) { if (el && el.offsetTop <= y) current = tabs[i]; });
+        if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) current = tabs[tabs.length - 1];
+        tabs.forEach(function (t) { t.classList.toggle('active', t === current); });
+      }
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    })();
+  </script>
 </body>
 
 </html>

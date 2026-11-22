@@ -4,206 +4,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PicPay - Eduardo Oliveira</title>
-  <link rel="stylesheet" type="text/css" href="normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/output.css">
+  <title>PicPay — Eduardo Oliveira</title>
+  <meta name="color-scheme" content="dark">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
 </head>
 
-<body class="bg-gray-50">
-  <!-- <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-white/80 border-b border-gray-100">
-    <div class="max-w-4xl mx-auto flex justify-center py-3 px-4">
-      <ul class="flex gap-4 sm:gap-8 list-none">
-        <li><a href="index.html#about" class="text-gray-700 font-medium text-xs sm:text-sm tracking-wide hover:text-orange-500 transition-all duration-300 hover:scale-105">About</a></li>
-        <li><a href="index.html#projects" class="text-gray-700 font-medium text-xs sm:text-sm tracking-wide hover:text-orange-500 transition-all duration-300 hover:scale-105">Projects</a></li>
-        <li><a href="index.html#contact" class="text-gray-700 font-medium text-xs sm:text-sm tracking-wide hover:text-orange-500 transition-all duration-300 hover:scale-105">Contact</a></li>
-      </ul>
+<body>
+  <nav class="tabs" aria-label="Pages">
+    <div class="wrap">
+      <a href="index.html">readme.md</a>
+      <a href="index.html#experience">experience.log</a>
+      <a href="picpay.html" class="active">picpay.md</a>
     </div>
-  </nav> -->
+  </nav>
 
   <main>
-    <header class="py-16 sm:py-24 px-4 sm:px-8 bg-gradient-to-br from-white via-gray-50 to-orange-50 relative overflow-hidden">
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,140,0,0.1),transparent_50%)] pointer-events-none"></div>
-      <div class="max-w-6xl mx-auto relative z-10">
-        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-          <div class="relative group flex-shrink-0">
-            <div class="absolute -inset-1 bg-gradient-to-r from-orange-500 to-red-500 rounded-3xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
-            <img src="img/picpay-icon.jpg" alt="PicPay App Icon" class="relative w-32 sm:w-40 h-32 sm:h-40 rounded-3xl shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
-          </div>
-          <div class="flex-1 text-center md:text-left">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-light mb-4 sm:mb-6">
-              <span class="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent font-medium">PicPay</span>
-            </h1>
-            <p class="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">Payment App, Credit and Debit Card Manager, Investment Tools</p>
-            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
-              <a href="https://www.picpay.com/" target="_blank" class="group bg-white/80 backdrop-blur-sm border border-gray-200 text-gray-700 px-6 py-3 rounded-full font-medium transition-all duration-300 hover:bg-orange-500 hover:border-orange-500 hover:text-white hover:scale-105 hover:shadow-lg">
-                <span class="flex items-center justify-center gap-2">
-                  <span>Company Website</span>
-                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                  </svg>
-                </span>
-              </a>
-              <a href="https://apps.apple.com/br/app/picpay-conta-pix-e-cart%C3%A3o/id561524792" target="_blank" class="group bg-white/80 backdrop-blur-sm border border-gray-200 text-gray-700 px-6 py-3 rounded-full font-medium transition-all duration-300 hover:bg-blue-600 hover:border-blue-600 hover:text-white hover:scale-105 hover:shadow-lg">
-                <span class="flex items-center justify-center gap-2">
-                  <span>App Store</span>
-                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"></path>
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
+    <header class="case-hero wrap">
+      <p class="crumb">work / picpay</p>
+      <h1>PicPay</h1>
+      <p class="lead">Brazil's leading digital payments platform: payments, card management and investment tools, used by millions of people every day.</p>
+      <div class="tags">
+        <span class="tag">Swift</span><span class="tag">Obj-C</span><span class="tag">UIKit</span><span class="tag">MVVM</span><span class="tag">Coordinator</span>
+      </div>
+      <div class="links">
+        <a href="https://www.picpay.com/" target="_blank" rel="noopener">picpay.com ↗</a>
+        <a href="https://apps.apple.com/br/app/picpay-conta-pix-e-cart%C3%A3o/id561524792" target="_blank" rel="noopener">App Store ↗</a>
       </div>
     </header>
 
-    <section class="py-12 sm:py-16 px-4 sm:px-8 bg-white">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-light mb-8 sm:mb-12 text-center">
-          <span class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Project</span>
-          <span class="text-gray-800"> Overview</span>
-        </h2>
-        <div class="max-w-4xl mx-auto text-lg sm:text-xl text-gray-600 leading-relaxed">
-          <p>
-            PicPay is Brazil’s leading digital payments platform, serving millions of active users with a focus on accessibility and security. As the platform expanded its ecosystem, the challenge was to maintain a seamless user experience while integrating complex new financial services.
-          </p>
-          <p class="mt-4">
-             As an iOS Developer for over four years, I worked within the User Activation, Wallet, and Financial Products squads. I was responsible for building and scaling core features—from the initial onboarding and deposit flow to advanced wealth management tools—ensuring every release met bank-grade security standards without compromising performance.
-          </p>
+    <div class="wrap">
+      <section class="prose">
+        <h2 class="sec-title"><b>#</b><span>overview</span></h2>
+        <p>
+          As the platform expanded its ecosystem, the challenge was to keep the experience seamless while integrating
+          complex new financial services.
+        </p>
+        <p>
+          I worked as an iOS engineer for over four years across the User Activation, Wallet and Financial Products
+          squads. I built and scaled core features, from onboarding and deposits to wealth-management tools, and every
+          release had to meet bank-grade security standards without hurting performance.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><b>#</b><span>technical notes</span></h2>
+        <div class="cards">
+          <div class="card"><h3>UIKit</h3><p>Programmatic layout for building interfaces.</p></div>
+          <div class="card"><h3>Architecture</h3><p>MVVM, Coordinator and modular architecture.</p></div>
+          <div class="card"><h3>Security</h3><p>Keychain for secure data storage.</p></div>
+          <div class="card"><h3>Notifications</h3><p>Push notifications for real-time updates.</p></div>
+          <div class="card"><h3>Camera</h3><p>QR code and barcode scanning.</p></div>
+          <div class="card"><h3>Performance</h3><p>Dispatch queues for async work.</p></div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="py-12 sm:py-16 px-4 sm:px-8 bg-gradient-to-b from-gray-50 to-white">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-light mb-12 sm:mb-16 text-center">
-          <span class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Technologies</span>
-          <span class="text-gray-800"> Used</span>
-        </h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
-          <div class="group bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl border border-gray-100 hover:border-orange-200 transition-all duration-300 hover:-translate-y-1">
-            <div class="text-orange-500 text-3xl sm:text-4xl mb-4 group-hover:scale-110 duration-300">📱</div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">UIKit</h3>
-            <p class="text-gray-600 leading-relaxed">Programmatic layout for designing interfaces</p>
+      <section>
+        <h2 class="sec-title"><b>#</b><span>key features</span></h2>
+
+        <div class="feature">
+          <div>
+            <h3>Home screen</h3>
+            <p>Built a dynamic banner system for quick remote configuration. Improved the suggestion list and added new elements in the scroll view using the Texture framework, prioritizing performance.</p>
           </div>
-          <div class="group bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl border border-gray-100 hover:border-orange-200 transition-all duration-300 hover:-translate-y-1">
-            <div class="text-orange-500 text-3xl sm:text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">🏗️</div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Architecture</h3>
-            <p class="text-gray-600 leading-relaxed">MVVM, Coordinator, and Modular architecture</p>
-          </div>
-          <div class="group bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl border border-gray-100 hover:border-orange-200 transition-all duration-300 hover:-translate-y-1">
-            <div class="text-orange-500 text-3xl sm:text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">🛡️</div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Security</h3>
-            <p class="text-gray-600 leading-relaxed">Keychain for secure data storage</p>
-          </div>
-          <div class="group bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl border border-gray-100 hover:border-orange-200 transition-all duration-300 hover:-translate-y-1">
-            <div class="text-orange-500 text-3xl sm:text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">🔔</div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Notifications</h3>
-            <p class="text-gray-600 leading-relaxed">Push notifications for real-time updates</p>
-          </div>
-          <div class="group bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl border border-gray-100 hover:border-orange-200 transition-all duration-300 hover:-translate-y-1">
-            <div class="text-orange-500 text-3xl sm:text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">📷</div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Camera</h3>
-            <p class="text-gray-600 leading-relaxed">QR Code and Bar Code scanning</p>
-          </div>
-          <div class="group bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl border border-gray-100 hover:border-orange-200 transition-all duration-300 hover:-translate-y-1">
-            <div class="text-orange-500 text-3xl sm:text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">⚡</div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Performance</h3>
-            <p class="text-gray-600 leading-relaxed">Dispatch queues for async operations</p>
-          </div>
+          <img src="img/screenshots/picpay.png" alt="PicPay home screen" loading="lazy">
         </div>
-      </div>
-    </section>
 
-    <section class="py-12 sm:py-16 px-4 sm:px-8 bg-white">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-light mb-12 sm:mb-16 text-center">
-          <span class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Key</span>
-          <span class="text-gray-800"> Features</span>
-        </h2>
-
-        <div class="space-y-16 sm:space-y-20">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div class="space-y-4 sm:space-y-6">
-              <h3 class="text-2xl sm:text-3xl font-semibold text-gray-800">Home Screen</h3>
-              <p class="text-gray-600 leading-relaxed text-lg">
-                Developed a dynamic banner system for quick and convenient remote configuration. Enhanced the suggestion
-                list and implemented additional elements within the scroll view using the Texture framework, prioritizing
-                performance.
-              </p>
-            </div>
-            <div class="relative group">
-              <img src="img/screenshots//picpay.png" alt="Home Screen" class="relative border border-gray-200 w-full max-w-xs mx-auto rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300">
-            </div>
+        <div class="feature">
+          <div>
+            <h3>Wallet management</h3>
+            <p>Redesigned the entire wallet feature with screen-reader accessibility, and implemented a credit/debit card manager for managing payment methods.</p>
           </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div class="space-y-4 sm:space-y-6 order-2 md:order-1">
-              <h3 class="text-2xl sm:text-3xl font-semibold text-gray-800">Wallet Management</h3>
-              <p class="text-gray-600 leading-relaxed text-lg">
-                Redesigned the entire wallet feature, ensuring accessibility for screen readers. Implemented a
-                credit/debit card manager for seamless management of payment methods.
-              </p>
-            </div>
-            <div class="relative group order-1 md:order-2">
-              <img src="img/screenshots//picpay2.png" alt="Wallet Screen" class="relative border border-gray-200 w-full max-w-xs mx-auto rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300">
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div class="space-y-4 sm:space-y-6">
-              <h3 class="text-2xl sm:text-3xl font-semibold text-gray-800">Savings Account</h3>
-              <p class="text-gray-600 leading-relaxed text-lg">
-                Created a flexible savings account that allows users to organize their savings using virtual Piggy Banks.
-                Involved in the project from inception, including design research and refinement.
-              </p>
-            </div>
-            <div class="relative group">
-              <img src="img/screenshots//picpay4.png" alt="Savings Screen" class="relative border border-gray-200 w-full max-w-xs mx-auto rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300">
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div class="space-y-4 sm:space-y-6 order-2 md:order-1">
-              <h3 class="text-2xl sm:text-3xl font-semibold text-gray-800">Transaction Statement</h3>
-              <p class="text-gray-600 leading-relaxed text-lg">
-                Built a simplified statement screen that unified all transactions from different microservices within the
-                app, providing users with a comprehensive overview of their activities.
-              </p>
-            </div>
-            <div class="relative group order-1 md:order-2">
-              <img src="img/screenshots//picpay9.png" alt="Statement Screen" class="relative border border-gray-200 w-full max-w-xs mx-auto rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300">
-            </div>
-          </div>
+          <img src="img/screenshots/picpay2.png" alt="PicPay wallet screen" loading="lazy">
         </div>
-      </div>
-    </section>
 
-    <section class="py-12 sm:py-16 px-4 sm:px-8 bg-gradient-to-b from-gray-50 to-white">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-light mb-12 sm:mb-16 text-center">
-          <span class="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Additional</span>
-          <span class="text-gray-800"> Screenshots</span>
-        </h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-          <div class="group relative">
-            <img src="img/screenshots//picpay6.png" alt="Feature Screenshot" class="relative border border-gray-200 w-full max-w-48 mx-auto rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-300">
+        <div class="feature">
+          <div>
+            <h3>Savings account</h3>
+            <p>Created a flexible savings account that lets users organize money into virtual piggy banks. I was involved from the start, including design research and refinement.</p>
           </div>
-          <div class="group relative">
-            <img src="img/screenshots//picpay7.png" alt="Feature Screenshot" class="relative border border-gray-200 w-full max-w-48 mx-auto rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-300">
-          </div>
-          <div class="group relative"><img src="img/screenshots//picpay8.png" alt="Feature Screenshot" class="relative border border-gray-200 w-full max-w-48 mx-auto rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-300">
-          </div>
+          <img src="img/screenshots/picpay4.png" alt="PicPay savings screen" loading="lazy">
         </div>
-      </div>
-    </section>
+
+        <div class="feature">
+          <div>
+            <h3>Transaction statement</h3>
+            <p>Built a simplified statement screen that unified transactions from several microservices into one overview of the user's activity.</p>
+          </div>
+          <img src="img/screenshots/picpay9.png" alt="PicPay statement screen" loading="lazy">
+        </div>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><b>#</b><span>more screens</span></h2>
+        <div class="shots">
+          <img src="img/screenshots/picpay6.png" alt="PicPay screenshot" loading="lazy">
+          <img src="img/screenshots/picpay7.png" alt="PicPay screenshot" loading="lazy">
+          <img src="img/screenshots/picpay8.png" alt="PicPay screenshot" loading="lazy">
+        </div>
+      </section>
+
+      <footer class="site"><a class="back" href="index.html#work">← back to work</a> &nbsp;·&nbsp; &copy; 2026 Eduardo Oliveira</footer>
+    </div>
   </main>
 
-  <footer class="bg-black text-gray-400 text-center py-6 sm:py-8 text-xs sm:text-sm border-t border-gray-800 px-4">
-    <p>&copy; 2025 Eduardo Oliveira. All rights reserved.</p>
-  </footer>
-
-  <script src="js/script.js"></script>
+  <div class="status" role="presentation">
+    <div class="wrap">
+      <span class="branch">⎇ main</span>
+      <span class="push hide-sm">Swift · UIKit</span>
+      <span>UTF-8</span>
+    </div>
+  </div>
 </body>
 
 </html>
