@@ -226,3 +226,9 @@ video.demo { width: 100%; max-width: 300px; border: 1px solid var(--line); borde
 .btn.primary { background: var(--blue); border-color: var(--blue); color: #0b1220; font-weight: 600; }
 .btn.primary:hover { filter: brightness(1.1); }
 @media (max-width: 680px) { .stats { grid-template-columns: 1fr; gap: 16px; } }
+
+@media (max-width: 480px) {
+  .tabs .wrap { padding: 0 8px; }
+  .tabs a { padding: 11px 9px; font-size: 12.5px; }
+  .tabs a.active { padding-bottom: 12px; }
+}
